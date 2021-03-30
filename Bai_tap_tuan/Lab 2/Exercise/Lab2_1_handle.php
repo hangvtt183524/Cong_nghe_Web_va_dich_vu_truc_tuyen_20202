@@ -8,9 +8,14 @@
     I am studying at <?php echo $_POST["university"]; ?> <br>
     My hobbies are:
     <br> <ol>
-    <?php for($x=0; $x<4; $x++){
+    <?php /*for($x=0; $x<4; $x++){
         if(isset($_POST["hobby"])) echo "<li>".$_POST["hobby"]."</li>";
         
+    }*/
+    if (isset($_POST['hobby'])) {
+        foreach($_POST['hobby'] as $value) {
+            echo "<li>".$value."</li>";
+        }
     }
     ?></ol>
     

@@ -28,11 +28,6 @@
 				<tr>
 					<td>Your name: </td>
 					<td><input type="text" size="10" maxlength="15" name="name" value="<?php if (isset($_GET["name"])) echo $_GET["name"]; ?>"></td>
-					<?php 
-// 					if (isset($_GET["name"])) {
-// 					    echo "Hi ".$_GET["name"]."!<br>";
-// 					}
-// 					?>
 				</tr>
 				<tr>
 					<td>Date: </td>
@@ -140,8 +135,6 @@
 			    }
 			    
 			}
-// 			
-// 			
 			
 			?>
 		</form>

@@ -57,7 +57,7 @@
 						</select>
 						<select name="year">
 						<?php 
-						for ($i=1900; $i<=2200; $i++) {
+						for ($i=1900; $i<=2010; $i++) {
 						    if ($i==$year)
 						        print("<option selected>$i</option>");
 						    else print("<option>$i</option>");
@@ -107,6 +107,7 @@
 			if (isset($_GET["name"])) {
 			    echo "Hi ".$_GET["name"]."!<br>";
 			}
+			$a=1;
 			if (array_key_exists("day", $_GET)) {
 			    switch ($month) {
 					case 1:
@@ -125,34 +126,57 @@
 						$d=31; break;	
 			        case 4: 
 						if ($day > 30) {
-			                echo "<br>Invalid date! Please choose again!"; break;
+ 
+							$a=0;
+							break;
 			            }
-			            else $d = 30; break;
+			            else{
+							$d=30;
+							break;
+						}
 			        case 6:
 						if ($day > 30) {
-			                echo "<br>Invalid date! Please choose again!"; break;
+			                
+							$a=0;
+							break;
 			            }
-			            else $d = 30; break;
+			            else{
+							$d=30;
+							break;
+						}
 			        case 9:
 						if ($day > 30) {
-			                echo "<br>Invalid date! Please choose again!"; break;
+							$a=0;
+							break;
 			            }
-			            else $d = 30; break;
+			            else{
+							$d=30;
+							break;
+						}
 			        case 11: 
 			            if ($day > 30) {
-			                echo "<br>Invalid date! Please choose again!"; break;
+							$a=0;
+							break;
 			            }
-			            else $d = 30; break;
+			            else{
+							$d=30;
+							break;
+						}
 			        case 2:
 			            if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
 			                if ($day > 29) {
-			                    echo "<br>Invalid date! Please choose again!"; break;
+								$a=0;
+								break;
 			                }
-			                else $d = 29; break;
+			                else{
+								$d=29;
+								break;
+							}
 			            }
 						else{
 							if($day > 28){
-								echo "<br>Invalid date! Please choose again!"; break;
+								$a=0;
+								break;
 							}
 							else{
 								$d=28;
@@ -160,14 +184,18 @@
 							}
 						}
 			    }
+				if($a==1){
 				echo "You have chosen to have an appointment on ".$hour.":".$minute.":".$second.", ".$day."/".$month."/".$year."<br>";
 				echo "<br>More information<br>";
 				echo "<br>In 12 hours, the time and date is ";
-				if ($hour>12)
-					echo ($hour-12).":".$minute.":".$second." PM, ";
+				
+					if ($hour>12)
+						echo ($hour-12).":".$minute.":".$second." PM, ";
 					else echo $hour.":".$minute.":".$second." AM, ";
 					echo $day."/".$month."/".$year."<br>";
-					echo "<br>This month has ".$d." days!";    
+					echo "<br>This month has ".$d." days!"; 
+				}
+				else echo "<br>Invalid date! Please choose again!"; 
 			}
 // 			
 // 			

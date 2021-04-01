@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ex 11.1</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var myArray = new Array();
+			myArray.push("Viet Anh");
+			myArray.push("Hang");
+			myArray.push("Thu");
+			
+			document.writeln(myArray.toString());
+			document.writeln("<br>");
+			
+			document.writeln(myArray[1]);
+			document.writeln("<br>");
+			
+			document.writeln("Array Size: " + myArray.length);
+			document.writeln("<br>");
+			
+			var who = myArray.pop();
+			document.writeln("Popped Element: " + who);
+			document.writeln("<br>");
+			
+			document.writeln("Array Size: " + myArray.length);
+			document.writeln("<br>");
+			document.writeln("<br>");
+			
+			var otherArray = new Array("dog", 3, 8.4);
+			
+			document.writeln(otherArray.toString());
+			document.writeln("<br>");
+			document.writeln("<br>");
+			
+			otherArray["key"] = "value";
+			document.writeln(otherArray["key"]);
+			document.writeln("<br>");
+		</script>
+	</body>
+</html>

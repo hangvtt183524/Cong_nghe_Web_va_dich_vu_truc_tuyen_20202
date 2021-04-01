@@ -57,7 +57,7 @@
 						</select>
 						<select name="year">
 						<?php 
-						for ($i=1900; $i<=2010; $i++) {
+						for ($i=1900; $i<=2100; $i++) {
 						    if ($i==$year)
 						        print("<option selected>$i</option>");
 						    else print("<option>$i</option>");

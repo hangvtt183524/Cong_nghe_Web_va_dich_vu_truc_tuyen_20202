@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Register Form</title></head>
+        <script>
+            function checkVali(){
+                var check = 1;
+                var name_= document.forms["myform"]["name"].value;
+                var email_=document.forms["myform"]["email"].value;
+                var phonenumber_=document["myform"]["phonenumber"].value;
+                var idol_=document["myform"]["idol"].value;
+                //name
+                if(name_==""){
+                    alert("Invalid Name!");
+                    if(check ==1) check=0;
+                } 
+                //email
+                var posA=email_.indexOf("@");
+                var posD=email_.lastIndexOf("."); 
+                if (posA<1 || posD<posA+2 || posD+2>=email_.length){
+                    alert("Invalid email!");
+                    if(check ==1) check=0;
+                }
+                //phonenumber
+                var tmp=/[0]{1}\d{9}/;
+                if(!phonenumber_.match(tmp)){
+                    alert("Invalid phone number! Phone number must start with 0 and include 10 digits");
+                    if(check ==1) check=0;
+                }
+                //idol
+                if(idol_==""){
+                    alert("You can not let Idol input blank like this!");
+                    if(check == 1) check=0;
+                } 
+                if(check == 0) return false;
+                if(check == 1) return true;
+            }
+        </script>
+    <body>
+        <form name="myform" onsubmit="return checkVali()" method="post" action="lab3_3_handle.php">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        Input your information!
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone number: </td>
+                    <td><input type="text" name="phonenumber"></td>
+                </tr>
+                <tr>
+                    <td>No.1 Idol:</td>
+                    <td><input type="text" name="idol"></td>
+                </tr>
+                
+            </table>
+            <input type="submit">
+    </body>
+</html>

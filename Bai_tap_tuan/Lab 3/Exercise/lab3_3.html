@@ -32,11 +32,14 @@
                     if(check == 1) check=0;
                 } 
                 if(check == 0) return false;
-                if(check == 1) return true;
+                if(check == 1){
+                    alert("Your infomation has been submited successfully!");
+                    return true;
+                }
             }
         </script>
     <body>
-        <form name="myform" onsubmit="return checkVali()" method="post" action="lab3_3_handle.php">
+        <form name="myform" onsubmit="return checkVali()" method="post">
             <table>
                 <tr>
                     <td colspan="2">

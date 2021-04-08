@@ -14,11 +14,21 @@
 
             }
         }
+        function validateMoney(){
+            var moneyCheck=new RegExp("[0-9]*[\.][0-9][0-9]");
+            if(moneyCheck.test(document.myForm.moneyField.value)){
+                alert("Valid Money");
+                return true;
+            }else{
+                alert("Invalid Money: "+document.myForm.moneyField.value);
+                return false;
+            }
+        }
         </script>
     </head>
     <body>
         <form id="myForm">
-        Postal Code: <input type="text" name="postalCodeField"><input type="button" value="Check Postal Code" onclick="validatePostalCode">
+        Postal Code: <input type="text" name="postalCodeField"><input type="button" value="Check Postal Code" onclick="validatePostalCode()">
         <br>
         Money: $<input type="text" name="moneyField"><input type="button" value="Check Money" onclick="validatePostalCode()">
 

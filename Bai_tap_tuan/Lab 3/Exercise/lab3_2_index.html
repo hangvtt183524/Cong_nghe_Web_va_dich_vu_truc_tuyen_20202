@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab3_2 - Dom - index.html</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            iframe {
+                width: 45%;
+                height: 500px;
+            }
+        </style>
+                <script>
+                    function addBlog() {
+    var iframe_right = document.getElementById("iframe_right");
+    var vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+    var mobile = iframe_right.contentWindow.document.forms['cookie']["tel"].value;
+    var name = iframe_right.contentWindow.document.forms['cookie']['name'].value;
+    var email = iframe_right.contentWindow.document.forms['cookie']['email'].value;
+    if(mobile !=='') {
+        if (vnf_regex.test(mobile) == false) {
+            iframe_right.contentWindow.document.getElementById('alert').innerHTML = "Phone Number invalid! Try again please!";
+            return false;
+        }
+    } else {
+        iframe_right.contentWindow.document.getElementById('alert').innerHTML = "Enter Phone Number!";
+        return false;
+    }
+
+    
+    if (name =='' || name == null) {
+        iframe_right.contentWindow.document.getElementById('alert').innerHTML = "Enter Your Name!";
+        return false;
+    } 
+
+    if (email =='' || email == null) {
+        iframe_right.contentWindow.document.getElementById('alert').innerHTML = "Enter Your Email!";
+        return false;
+    }
+
+    iframe_right.contentWindow.document.getElementById('alert').innerHTML = "Done";
+    setCookie(name, email, mobile);
+    getCookie(['name','email', 'phone']);
+}
+
+function setCookie(name, email, mobile) {
+    document.cookie = "name" + "=" + name + ";";
+    document.cookie = "email" + "=" + email + ";" ; 
+    document.cookie =  "phone" + "=" + mobile + ";";
+
+    var date = new Date();
+    date.setTime(date.getTime() + (24 * 60 * 60 *1000));
+    document.cookie = "expires=" + date.toUTCString() + ";"
+}
+
+function getCookie(x) {
+  var iframe_left = document.getElementById("iframe_left");
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i].split("=");
+    iframe_left.contentWindow.document.getElementById(x[i]).innerHTML = c[0] + ": " + c[1];
+  }
+}
+
+                </script>
+    </head>
+    <body onload="getCookie(['name', 'email', 'phone'])">
+            <iframe src="lab3_2_left.html" id="iframe_left"></iframe>
+            <iframe src="lab3_2_right.html" id="iframe_right"></iframe>
+            <br>
+
+            <button onclick="addBlog()">Set Cookie</button>
+    </body>
+</html>

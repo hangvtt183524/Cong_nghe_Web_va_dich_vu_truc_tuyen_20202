@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+.bg {
+    background-color:powderblue;
+    padding: 2em;
+}
+.smaller-bg {
+    background-color:rgb(205, 231, 235);
+    margin: 5em 10em 5em 10em;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 30%, 70%);
+    grid-template-areas:
+        "left right";
+}
+img {
+    grid-area: left;
+    width: 100%;
+    margin: 2em 2em 2em 2em;
+}
+.info {
+    grid-area: right;
+    margin-left: 2em;
+    padding: 0em 2em 2em 2em;
+    line-height: 2em;
+}
+.info p {
+    line-height: 2em;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    font-size: large;
+}
+.info img {
+    width:42px;
+    height:42px;
+    margin-top: 0em;
+    padding: 0em 0em 0em 0em;
+}
+
+    

@@ -1,14 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;
 }
 .bg {
+    background-image: url("../image/Capture.png");
+    height: 100%;
+
+  /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color:powderblue;
     padding: 2em;
 }
 .smaller-bg {
-    background-color:rgb(205, 231, 235);
-    margin: 5em 10em 5em 10em;
+    
+    margin: 0em 10em 5em 10em;
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(2, 30%, 70%);

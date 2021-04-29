@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Table with database</title>
+<title>Category Administration page</title>
 <style>
     table {
         width: 50%;
@@ -44,13 +44,13 @@
         ?>
         
         <tr>
-            <td><input type="text" name="cateid"></td>
-            <td><input type="text" name="title"></td>
-            <td><input type="text" name="descr"></td>
+            <td><input type="text" name="cateid" required></td>
+            <td><input type="text" name="title" required></td>
+            <td><input type="text" name="descr" required></td>
         </tr>
         </table>
         <br>
-        <button><input type="submit"></button>
+        <input type="submit" name="submit">
 
         <?php
 

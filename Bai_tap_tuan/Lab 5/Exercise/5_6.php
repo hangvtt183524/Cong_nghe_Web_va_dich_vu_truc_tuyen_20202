@@ -1,9 +1,15 @@
 <html>
     <head>
         <title>Business Registration</title>
-        <link rel="stylesheet" href="5_6.css">
+        
 
     </head>
+    <style>
+        .big {
+            display: grid;
+            grid-template-columns: repeat(2,1fr  1fr);
+        }
+    </style>
     <body>
         <h1>Business Registration</h1>
         <form action="" method="POST">

@@ -18,6 +18,10 @@ body {
 	max-width: 75%;
 	padding-bottom: 30px;
 }
+.idol-list .card:hover {
+	box-shadow: 15px 15px 15px #b2bec3;
+	background: #FFEAFF;
+}
 .card .name {
 	font-size: 18px;
 	font-weight: bold;	
@@ -65,18 +69,3 @@ body {
 .align-center {
 	text-align: center;
 }
-
-/* a.info-button { */
-/* 	background-color: #f9ca24; */
-/* 	border: none; */
-/* 	padding: 1em; */
-/* 	border-radius: 5px; */
-/* 	font-weight: bold; */
-	
-/* /* 	 -webkit-appearance: button; */ */
-/* /*     -moz-appearance: button; */ */
-/* /*     appearance: button; */ */
- 
-/*      */
-/* /*     color: initial; */ */
-/* } */

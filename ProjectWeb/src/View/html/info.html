@@ -9,7 +9,62 @@
         </div>
         <div class="p1">
             <div class="p1-1">
-                <img src="../image/ateez.jpg" alt="pic of idol">
+                <button class="preBtn" onclick="plusIdol(-1)">&#10094</button>
+                <button class="nextBtn" onclick="plusIdol(1)">&#10095</button>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">ATEEZ</div>
+                    </div>
+                    <img src="../image/ateez.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Hongjoong</div>
+                    </div>
+                    <img src="../image/hongjoong.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Seonghwa</div>
+                    </div>
+                    <img src="../image/seonghwa.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Yunho</div>
+                    </div>
+                    <img src="../image/yunho.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Yeosang</div>
+                    </div>
+                    <img src="../image/yeosang.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">San</div>
+                    </div>
+                    <img src="../image/san.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Mingi</div>
+                    </div>
+                    <img src="../image/mingi.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Wooyoung</div>
+                    </div>
+                    <img src="../image/wooyoung.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Jongho</div>
+                    </div>
+                    <img src="../image/jongho.jpg" alt="pic of idol">
+                </div>
             </div>
             <div class="p1-2">
                 <p>
@@ -23,31 +78,84 @@
         <div class="p2">
             <h2>Danh sách đĩa nhạc</h2>
             <div class="p2-1">
+                <button class="left-button" onclick="plusDivs(-1)">&#10094</button>
                 <div class="album">
-                    <img src="../image/album1.png" alt="album1">
-                    <div class="albname"><span>Treasure EP.1:</span>All to Zero</div>
+                    <div class="imgIdol">
+                        <img src="../image/album1.png" alt="album1">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure EP1:</span>All to Zero</div>
                 </div>
                 <div class="album">
-                    <img src="../image/album2.png" alt="album2">
-                    <div class="albname"><span>Treasure EP.2:</span>Zero to One</div>
+                    <div class="imgIdol">
+                        <img src="../image/album2.png" alt="album2">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure EP2:</span>Zero to One</div>
                 </div>
                 <div class="album">
-                    <img src="../image/album3.png" alt="album3">
-                    <div class="albname"><span>Treasure EP.3:</span>One to All</div>
+                    <div class="imgIdol">
+                        <img src="../image/album3.png" alt="album3">
+                    </div>
+                    <div class="albname"><span>Treasure EP3:</span>One to All</div>
                 </div>
                 <div class="album">
-                    <img src="../image/album4.png" alt="album4">
+                    <div class="imgIdol">
+                        <img src="../image/album4.png" alt="album4">
+                    </div>
                     <div class="albname"><span>Treasure EP.FIN:</span> All to Action</div>
                 </div>
                 <div class="album">
-                    <img src="../image/album5.png" alt="album5">
-                    <div class="albname"><span>Treasure Epilouge:</span>Action to Answer</div>
+                    <div class="imgIdol">
+                        <img src="../image/album5.png" alt="album5">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure Epilouge:</span>Action to Answer</div>
                 </div>
                 <div class="album">
+                    <div class="imgIdol">
                     <img src="../image/album6.png" alt="album6">
-                    <div class="albname"><span>Zero:</span>Fever Part 1</div>
+                    </div>
+                    <div class="albname"><span>ATEEZ Zero Fever:</span>Part 1</div>
                 </div>
+                <button class="right-button" onclick="plusDivs(1)">&#10095</button>
+                <script>
+                    var idolIndex = 1;
+                    showIdol(idolIndex);
+                    
+                    function plusIdol(n) {
+                    showIdol(idolIndex += n);
+                    }
+                    
+                    function showIdol(n) {
+                    var i;
+                    var x = document.getElementsByClassName("idol");
+                    if (n > x.length) {idolIndex = 1}
+                    if (n < 1) {idolIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[idolIndex-1].style.display = "block";  
+                    }
+                </script>
+                 <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("album");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                    }
+                </script>
             </div>
+            
         </div>
         <div class="p3">
             <div class="p3-1">

@@ -3,17 +3,19 @@ body {
 }
 .p0 {
     background-color: #dfe6e9;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h1 {
     text-align: center;
     color: white;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 h1 span {
     text-align: center;
     display: block;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .p1 {
     display: grid;
@@ -97,19 +99,19 @@ h1 span {
 }
 
 .p2-1 {
-    position: relative;
-    width: 23em;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 3em;
 }
 .p2 h2 {
     margin: 0;
     color: white;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 1em 0 1em;
 }
 .album {
-    width: 15em;
+    width: 12em;
     margin: auto;
     background-color: white;
     border-radius: 10px;  
@@ -118,7 +120,7 @@ h1 span {
 }
 .album .imgIdol {
     width: 100%;
-    height: 15em;
+    height: 12em;
     position: relative;
 }
 .album .imgIdol img {
@@ -136,44 +138,6 @@ h1 span {
 .albname span {
     display: block;   
 }
-.left-button {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: auto;    
-    padding: 1em;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    background-color: #cae2ec;
-    border: none;
-    
-}
-.left-button:hover{
-    background-color: gray;
-}
-.right-button {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    width: auto;    
-    padding: 1em;
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    border: none;
-    background-color: #cae2ec;
-}
-.right-button:hover{
-    background-color: gray;
-}
-
 .p3 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -206,9 +170,6 @@ h1 span {
         line-height: 2em;
         margin: 3em 2em 3em 3em;
     }
-    .p0 {
-        padding: 0.3em 0;
-    }
     .p3 {
         grid-template-columns: 1fr;
     }
@@ -217,12 +178,12 @@ h1 span {
         margin-top: 1em;
     }
     .p3-1 img {
-        width: 6em;
-        height: 6em;
+        width: 7em;
+        height: 7em;
         padding-bottom: 3em;
     }
     .sns {
-        margin-left: 25%;
+        margin-left: 20%;
     }
     .p1-1:hover .overlay {
         height: 20%;
@@ -230,17 +191,18 @@ h1 span {
     .text {
         font-size: 4rem;
     }
-    .preBtn, .nextBtn, .left-button, .right-button {
+    .preBtn, .nextBtn {
         font-size: 2em;
     }
     .album {
-        width: 28em;
+        width: 25em;
     }
     .album .imgIdol {
-        height: 28em;
+        height: 25em;
     }
     .p2-1 {
-        width: 42em;
+        grid-template-columns: 1fr;
+    
     }
     .albname {
         font-size: 2.2rem;

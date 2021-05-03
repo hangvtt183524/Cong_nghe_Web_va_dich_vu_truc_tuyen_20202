@@ -78,7 +78,6 @@
         <div class="p2">
             <h2>Danh sách đĩa nhạc</h2>
             <div class="p2-1">
-                <button class="left-button" onclick="plusDivs(-1)">&#10094</button>
                 <div class="album">
                     <div class="imgIdol">
                         <img src="../image/album1.png" alt="album1">
@@ -115,7 +114,6 @@
                     </div>
                     <div class="albname"><span>ATEEZ Zero Fever:</span>Part 1</div>
                 </div>
-                <button class="right-button" onclick="plusDivs(1)">&#10095</button>
                 <script>
                     var idolIndex = 1;
                     showIdol(idolIndex);
@@ -133,25 +131,6 @@
                         x[i].style.display = "none";  
                     }
                     x[idolIndex-1].style.display = "block";  
-                    }
-                </script>
-                 <script>
-                    var slideIndex = 1;
-                    showDivs(slideIndex);
-                    
-                    function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                    }
-                    
-                    function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("album");
-                    if (n > x.length) {slideIndex = 1}
-                    if (n < 1) {slideIndex = x.length}
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                    }
-                    x[slideIndex-1].style.display = "block";  
                     }
                 </script>
             </div>

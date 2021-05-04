@@ -5,11 +5,14 @@ body {
 
 .idol-list {
 	background-color:#dfe6e9;
-	padding: 3em;
+	padding-bottom: 5em;
+    align-items: center;
 }
 
 .idol-list .card {
 	background-color: white;
+	width: 16em;
+	margin: auto;
 	border-radius: 10px;
 	padding: 1em;
 	box-shadow: 0px 10px 5px #b2bec3;
@@ -28,19 +31,36 @@ body {
 	padding-bottom: 0.7em;
 }
 
-.card img {
-	max-height: 300px;
-	border-radius: 5px;
+.card .image {
+	margin-top: 1em;
+	width: 100%;
+    height: 20em;
+    position: relative;
+}
+.card .image img {
+	max-height: 100%;
+	border-radius: 0.5em;
 	object-fit: cover;
-	
+	position: absolute;
+	top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card .text {
-	text-align: left;
-	margin-left: 2em;
-	margin-top: 0.5em;
+.card .textblock {
+	height: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
 	margin-bottom: 0.5em;
-	font-size: 16px;
+}
+
+.card .textblock .text {
+	text-align: left;
+	font-size: 1rem;
+}
+
+.card .btnblock {
+	margin-bottom: 0.5em;
 }
 
 .info-button {
@@ -61,11 +81,22 @@ body {
 
 .idol-container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap: 5px;
-	grid-row-gap: 40px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 3em;
 }
 
 .align-center {
 	text-align: center;
+}
+
+@media only screen and (max-width: 991px){
+	.idol-container {
+		grid-template-columns: 1fr;
+	}
+	.card {
+        width: 25em;
+    }
+    .album .image {
+        height: 25em;
+    }
 }

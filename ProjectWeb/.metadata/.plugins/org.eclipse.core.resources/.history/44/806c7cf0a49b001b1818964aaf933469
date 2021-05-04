@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Idol List</title>
+		<link rel="stylesheet" href="../css/idol_list.css">
+	</head>
+	<body>
+		<section class="idol-list">
+			<div>
+				<h1 class="align-center">Idols</h1>
+			</div>
+			<div class="idol-container">
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Thành viên nhóm nhạc quốc dân Girls' Generation</div>
+					<div>
+						<button class="info-button">More info</button>
+					</div>
+				</div>
+			
+			
+		
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<br>
+					<div>
+						
+						
+						<button class="info-button">More info</button> 
+					</div>
+				</div>
+			
+			
+	
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<div>
+						<button class="info-button">More info</button>
+					</div>
+				</div>
+			
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<div>
+						<button class="info-button">More info</button>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<div>
+						<button class="info-button">More info</button>
+					</div>
+				</div>
+			
+				<div class="card">
+					<div class="name">Im YoonA</div>
+					<div class="image">
+						<img src="../image/yoona.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<div>
+						<button class="info-button">More info</button>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div class="name">ATEEZ</div>
+					<div class="image">
+						<img src="../image/ateez.jpg">
+					</div>
+					<div class="text">Beautiful</div>
+					<br>
+					<div>
+					
+						<a href="../html/info.html" class="info-button">More info</a>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+		
+	</body>
+</html>

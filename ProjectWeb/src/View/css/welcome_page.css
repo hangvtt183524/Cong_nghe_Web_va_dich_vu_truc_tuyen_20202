@@ -1,51 +1,85 @@
-* {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
 
-.overview {
-    top: 0; right: 0; bottom: 0; left: 0;
-    display: grid;  
-    position: absolute;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 15% 70% 15%;
-    justify-items: center;
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
-
-.overview h1, h2 {
-    text-align: center;
+.bg {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #c0b5d3;
 }
-
-.overview img {
+.bg2 img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.32;
-    grid-column: 1/4;
-    grid-row: 1/4;
 }
-
-.content {
+.bg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg1-1 h2 {
+    font-size: 5rem;
+    line-height: 0.1em;
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.bg1-1 h2::before {
+    content: ' ';
     position: absolute;
-    top: 25%;
-    padding: 10px 10px 10px 10px;
+    width: 2.5em;
+    height: 0.25em;
+    background: #ab91d8;
+    bottom: -35;
+    z-index: -1;
+    margin-left: -0.9em;
+}
+.bg1-1 p {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.bg1-1 p::before {
+    content: ' ';
+    position: absolute;
+    width: 2.5em;
+    height: 0.3em;
+    background: #ab91d8;
+    bottom: 0;
+    z-index: -1;
+    margin-left: 10em;
+}
+.bg1-1 p span {
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 500;
+}
+header {
+    background-color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    color: #c0b5d3;
+}
+.navigation {
+    display: flex;
+    position: relative;
+}
+.navigation li {
+    list-style: none;
+    margin-left: 2em;
+}
+.navigation li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #c0b5d3;
 }
 
-#team {
-    font-size: 180px;
-}
 
-#slogan {
-    font-size: 45px;
-}
-
-.content a {
-    margin: 10px 10px 10px 10px;
-    border: 2px black solid;
-    padding: 10px 10px 10px 10px;
-}
-
-.navbar {
-    grid-column: 1/4;
-    grid-row: 1/2;
-}

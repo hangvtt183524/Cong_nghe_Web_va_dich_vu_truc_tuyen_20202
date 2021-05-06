@@ -1,0 +1,264 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+header {
+    background-color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    color: #c0b5d3;
+}
+.navigation {
+    display: flex;
+    position: relative;
+}
+.navigation li {
+    list-style: none;
+    margin-left: 2em;
+}
+.navigation li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #c0b5d3;
+}
+
+.idol-list {
+	background-color:#dfe6e9;
+	padding-bottom: 5em;
+    align-items: center;
+    padding-top: 2em;
+}
+
+
+.align-center {
+	text-align: center;
+	background-color: red;
+}
+
+.align-center h1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+.container1 {
+	margin-top: -10em;
+	margin-bottom: 5em;
+	background: red;
+}
+.container1 .search-box {
+	margin-top: 10em;
+	margin-left: 10em;
+	width: 2.8em;
+	height: 2.8em;
+	background: #2f3640;
+	border-radius: 3em;
+	padding: 0.5em;
+}
+
+.container1 .search-txt {
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	color: #999;
+	transition: 0.4s;
+	line-height: 40px;
+	font-size: 16px;
+	width: 0;
+}
+
+.container1 img {
+	width: 3em;
+	border-radius: 1em;
+}
+.search-box:hover > .search-txt {
+	width: 240px;
+	padding: 0 1em;
+}
+.idol-list .card {
+	background-color: white;
+	width: 16em;
+	
+	margin: auto;
+	border-radius: 10px;
+	padding: 1em;
+	box-shadow: 0px 10px 5px #b2bec3;
+	text-align: center;
+	font-family: sans-serif;
+	max-width: 75%;
+	padding-bottom: 30px;
+}
+.idol-list .card:hover {
+	box-shadow: 15px 15px 15px #b2bec3;
+	background: #FFEAFF;
+}
+.card .name {
+	font-size: 18px;
+	font-weight: bold;	
+	padding-bottom: 1.4em;
+}
+
+.card .image {
+	margin-top: 1em;
+	width: 100%;
+    height: 20em;
+    position: relative;
+}
+.card .image img {
+	
+	max-width: 100%;
+	border-radius: 0.5em;
+	object-fit: cover;
+	position: absolute;
+	top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .textblock {
+	height: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 3em;
+	margin-bottom: 0.5em;
+}
+
+.card .textblock .text {
+	text-align: left;
+	font-size: 1rem;
+}
+
+.card .btnblock {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.info-button {
+	background-color: #f9ca24;
+	color: black;
+	border: none;
+	padding: 1em;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.info-button:hover {
+	box-shadow: 0px 5px 5px #b2bec3;
+	color: #eb4db4;
+}
+
+.idol-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 3em;
+}
+
+footer {
+	background-color: #c0b5d3;
+	padding: 1em 0;
+}
+
+footer .container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 1em;
+}
+.footer-col h4 {
+	font-size: 1.5em;
+	color: #950096;
+	text-transform: capitalize;
+	position: relative;
+	margin-top: 0.5em;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	height: 2px;
+	background-color: red;
+	box-sizing: border-box;
+	width: 2em;
+}
+
+.footer-col li {
+	display: flex;
+	margin-bottom: 0.5em;
+}
+.footer-col ul li a {
+	color: white;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-family: Cambria;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+
+.footer-col ul li a:hover {
+	color: #700470;
+	padding-left: 1em;
+
+}
+
+.footer-col p {
+	margin-top: 0.2em;
+	font-size: 1em;
+	font-family: Cambria;
+	color: white;
+}
+.footer-col img {
+	border-radius: 0.5em;
+	max-height: 2em;
+	margin-right: 0.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+footer .container .h3 {
+	color: white;
+}
+
+.container .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.copyrightText {
+	width: 100%;
+	color: #999;
+	text-align: center;
+	font-family: Cambria;
+}
+
+@media only screen and (max-width: 991px){
+	.idol-container {
+		grid-template-columns: 1fr;
+	}
+	.card {
+        width: 25em;
+    }
+    .album .image {
+        height: 25em;
+    }
+    .footer-col {
+    	width: 50%;
+    	margin-bottom: 5em;
+    }
+    
+}

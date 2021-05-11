@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Info Page</title>
+        <link rel="stylesheet" href="../css/info.css">
+    </head>
+    <body>
+        <div class="p0">
+            <h1><span>All about</span>ATEEZ</h1>
+        </div>
+        <div class="p1">
+            <div class="p1-1">
+                <button class="preBtn" onclick="plusIdol(-1)">&#10094</button>
+                <button class="nextBtn" onclick="plusIdol(1)">&#10095</button>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">ATEEZ</div>
+                    </div>
+                    <img src="../image/ateez.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Hongjoong</div>
+                    </div>
+                    <img src="../image/hongjoong.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Seonghwa</div>
+                    </div>
+                    <img src="../image/seonghwa.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Yunho</div>
+                    </div>
+                    <img src="../image/yunho.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Yeosang</div>
+                    </div>
+                    <img src="../image/yeosang.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">San</div>
+                    </div>
+                    <img src="../image/san.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Mingi</div>
+                    </div>
+                    <img src="../image/mingi.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Wooyoung</div>
+                    </div>
+                    <img src="../image/wooyoung.jpg" alt="pic of idol">
+                </div>
+                <div class="idol">
+                    <div class="overlay">
+                        <div class="text">Jongho</div>
+                    </div>
+                    <img src="../image/jongho.jpg" alt="pic of idol">
+                </div>
+            </div>
+            <div class="p1-2">
+                <p>
+                    ATEEZ là một nhóm nhạc nam Hàn Quốc được thành lập bởi KQ Entertainment vào năm 2018.
+                    Nhóm có 8 thành viên, bao gồm: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung và Jongho.
+                    Nhóm chính thức ra mắt vào ngày 24 tháng 10 năm 2018 với Album Treasure EP.1: All to Zero.
+                    Trước khi ra mắt, ATEEZ đã từng có tên là "KQ Fellaz" dựa vào tên công ty là KQ Entertainment.
+                </p>
+            </div>
+        </div>
+        <div class="p2">
+            <h2>Danh sách đĩa nhạc</h2>
+            <div class="p2-1">
+                <div class="album">
+                    <div class="imgIdol">
+                        <img src="../image/album1.png" alt="album1">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure EP1:</span>All to Zero</div>
+                </div>
+                <div class="album">
+                    <div class="imgIdol">
+                        <img src="../image/album2.png" alt="album2">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure EP2:</span>Zero to One</div>
+                </div>
+                <div class="album">
+                    <div class="imgIdol">
+                        <img src="../image/album3.png" alt="album3">
+                    </div>
+                    <div class="albname"><span>Treasure EP3:</span>One to All</div>
+                </div>
+                <div class="album">
+                    <div class="imgIdol">
+                        <img src="../image/album4.png" alt="album4">
+                    </div>
+                    <div class="albname"><span>Treasure EP.FIN:</span> All to Action</div>
+                </div>
+                <div class="album">
+                    <div class="imgIdol">
+                        <img src="../image/album5.png" alt="album5">
+                    </div>
+                    <div class="albname"><span>ATEEZ Treasure Epilouge:</span>Action to Answer</div>
+                </div>
+                <div class="album">
+                    <div class="imgIdol">
+                    <img src="../image/album6.png" alt="album6">
+                    </div>
+                    <div class="albname"><span>ATEEZ Zero Fever:</span>Part 1</div>
+                </div>
+                <script>
+                    var idolIndex = 1;
+                    showIdol(idolIndex);
+                    
+                    function plusIdol(n) {
+                    showIdol(idolIndex += n);
+                    }
+                    
+                    function showIdol(n) {
+                    var i;
+                    var x = document.getElementsByClassName("idol");
+                    if (n > x.length) {idolIndex = 1}
+                    if (n < 1) {idolIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[idolIndex-1].style.display = "block";  
+                    }
+                </script>
+            </div>
+            
+        </div>
+        <div class="p3">
+            <div class="p3-1">
+                <h2>Where to find ATEEZ</h2>
+                <div class="sns">
+                    <a href="https://facebook.com/ATEEZofficial"><img src="../image/facebook.jpg" alt="sns"></a>
+                    <a href="https://facebook.com/ATEEZofficial"><img src="../image/insta.jpg" alt="sns"></a>
+                    <a href="https://facebook.com/ATEEZofficial"><img src="../image/twitter.jpg" alt="sns"></a>
+                    <a href="https://facebook.com/ATEEZofficial"><img src="../image/vlive.png" alt="sns"></a>
+                    <a href="https://facebook.com/ATEEZofficial"><img src="../image/yt.jpg" alt="sns"></a>
+                </div>                 
+            </div>
+            <div class="p3-2">
+                <img src="../image/ateez1.jpg" alt="pic of idol">
+            </div>
+        </div>
+    </body>
+</html>

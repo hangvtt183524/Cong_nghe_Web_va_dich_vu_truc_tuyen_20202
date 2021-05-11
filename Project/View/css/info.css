@@ -162,6 +162,44 @@ h1 span {
 .sns {
     margin-left: 28%;
 }
+.stick {
+    background-color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    width: 100%; 
+    top: 0;
+    font-family: sans-serif;
+}
+.content {
+    margin-top: 6em;
+}
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2em;
+    color: #c0b5d3;
+}
+.navigation {
+    display: flex;
+    position: relative;
+}
+.navigation li {
+    list-style: none;
+    margin-right: 2em;
+}
+.navigation li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #c0b5d3;
+}
+.navigation li a:hover {
+    color: indigo;
+}
+
 @media only screen and (max-width: 991px){
     .p1 {
         grid-template-columns: 1fr;

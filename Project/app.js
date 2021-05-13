@@ -1,19 +1,18 @@
 const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const path = require('path');
 
-http.createServer((req, res) => {
-    if (req.url === '/test') {
-        fs.readFile('./test.html', (err, data) => {
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            res.write(data);
-            return res.end();
-        });
-    }
-    else {
-        fs.readFile('./View/html/welcome_page.html', (err, data) => {
-            res.writeHead(200, {'Content-Type': 'text/html'});
-            res.write(data);
-            return res.end();
-          });
-    }
-}).listen(3000);
+const app = express();
+
+app.use(express.static('View'));
+app.set('views', './View/html');
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/View/html/welcome_page.html');
+});
+
+app.get('/test', (req, res) => {
+    res.sendFile(__dirname + '/test.html');
+});
+
+app.listen(3000);

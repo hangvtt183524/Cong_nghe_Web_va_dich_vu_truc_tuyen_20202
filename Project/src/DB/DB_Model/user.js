@@ -10,7 +10,7 @@ mongoClient.connect(url, (err, db) => {
         var dataUser = {
             userName: "JoongNine",
             password: "1234567890",
-            email: "joongnine@gmail.com",
+            email: "joongnine@gmail.com"
         }
 
         users.insertOne(dataUser, (err, res) => {

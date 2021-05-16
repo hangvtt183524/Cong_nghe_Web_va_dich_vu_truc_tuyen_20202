@@ -4,24 +4,25 @@
         <link rel="stylesheet" href="../css/login.css">
     </head>
     <body>
+        <div><%=message%> </div>
         <div class="bg">
             <div class="gif">
                 <img src="../image/cheering.gif" alt="cheering">
             </div>
             <div class="form">
-                <form action="/login" method="post">
+                <form id="login" action="/login_file" method="post">
                     <h1>Login</h1>
                     <div class="textfield">
-                        <input type="email" placeholder="Email" required name="email">
+                        <input type="email" placeholder="Email" required name="email" id="email">
                     </div>
                     <div class="textfield">
-                        <input type="password" placeholder="Password" required name="password">
+                        <input type="password" placeholder="Password" required name="password" id="password">
                     </div>
                     <div class="forget">
                         <a href="#">Forget Password</a>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Login" id="button">
                     </div>
                     <div class="or">
                         <p>Or login with </p>

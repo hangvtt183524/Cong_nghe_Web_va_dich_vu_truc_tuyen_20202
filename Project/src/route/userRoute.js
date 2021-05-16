@@ -4,11 +4,9 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const MongoClient = require('mongodb').MongoClient;
 
-
-router.post('/login', async(req, res, next) => {
+router.post('/login_file', async(req, res, next) => {
     try {
         var email = req.body.email;
-
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
             var dbo = db.db("duidol");
@@ -16,8 +14,11 @@ router.post('/login', async(req, res, next) => {
             dbo.collection("users").find({ "email": email }).toArray((err, result) => {
                 if (err) print(err);
                 else {
-                    if (result == null) {
-                        res.send("You have not registed yet!");
+                    if (result == null || result == undefined || result.length == 0) {
+                        console.log("email:" + email);
+                        //alert("You have not registed yet!");
+                        db.close();
+                        res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'You have not registered yet!'});
                     }
                     else {
                         bcrypt.genSalt(10, (err, salt) => {
@@ -26,9 +27,11 @@ router.post('/login', async(req, res, next) => {
                                 bcrypt.compare(req.body.password, result[0].password, (err, isMatch) => {
                                     if (err) throw err;
                                     else if(!isMatch) {
-                                        res.send("Pass doesn't match");
+                                        res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Password is wrong!'});
                                     }
                                     else {
+                                        console.log("Correct");
+                                        db.close();
                                         res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
                                     }
                                 });
@@ -36,7 +39,6 @@ router.post('/login', async(req, res, next) => {
                         });
                     }
                 }
-                db.close();
             });
             
         });   
@@ -57,8 +59,9 @@ router.post('/register', async(req, res) => {
             dbo.collection("users").find({ "email": email}).toArray((err, result) => {
                 if (err) print(err);
                 else {
-                    if (result != null) {
-                        res.send("Exists Email");
+                    if (result.length > 0) {
+                        console.log("result: " + result.length);
+                        res.json({"message": "Exists Email"});
                     }
                     else {
                         bcrypt.genSalt(10, (err, salt) => {
@@ -72,6 +75,7 @@ router.post('/register', async(req, res) => {
                                             if (err) throw err;
                                             console.log("inserted");  
                                             return res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
+                                            db.close();
                                         });
                                     }
                                 });
@@ -79,13 +83,15 @@ router.post('/register', async(req, res) => {
                         });
                     }
                 }
-                db.close();
             });
-            
         });   
     } catch (error) {
         res.status(400).send('invalid');
     }
+})
+
+router.get('/login', (req, res) => {
+    res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:''});
 })
 
 module.exports = router;

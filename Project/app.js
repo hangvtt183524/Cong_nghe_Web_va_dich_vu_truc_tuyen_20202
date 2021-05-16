@@ -17,6 +17,8 @@ app.use(express.urlencoded({extended: false}));
 
 app.use(express.static('View'));
 app.set('views', './View');
+app.set('view engine', 'ejs');
+//app.set('view engine', 'html');
 
 app.use('/', userRoute);
 
@@ -28,13 +30,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/View/html/welcome_page.html'));
 });
 
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/View/html/login.html'));
-});
-
 app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/View/html/register.html'));
 });
+/*
+app.get('/test', (req, res) => {
+    res.sendFile(path.join(__dirname, '/test.html'));
+});
 
-
+app.post('/test', (req, res) => {
+    res.json({"return": "abc"});
+});
+*/
 app.listen(3000);

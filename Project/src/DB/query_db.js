@@ -9,14 +9,14 @@ mongoClient.connect(url, (err, db) => {
     else {
         console.log('Successful to connect MongoDB');
 
-        db.createCollection('user', (err, res) => {
+        db.createCollection('users', (err, res) => {
             if (err) throw err;
             else {
                 console.log("Tao thanh cong collection user");
             }
         });
 
-        db.createCollection('idol', (err, res) => {
+        db.createCollection('idols', (err, res) => {
             if (err) throw err;
             else {
                 console.log("Tao thanh cong collection idol");

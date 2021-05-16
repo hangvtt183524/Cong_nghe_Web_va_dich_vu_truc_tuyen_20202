@@ -9,13 +9,13 @@
                 <img src="../image/cheering.gif" alt="cheering">
             </div>
             <div class="form">
-                <form action="">
+                <form action="/login" method="post">
                     <h1>Login</h1>
                     <div class="textfield">
-                        <input type="text" name="name" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required name="email">
                     </div>
                     <div class="textfield">
-                        <input type="password" name="pass" placeholder="Password" required>
+                        <input type="password" placeholder="Password" required name="password">
                     </div>
                     <div class="forget">
                         <a href="#">Forget Password</a>
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="sign-up">
-                        New to <span>DUIDOL</span> ? <a href="#">Sign up</a>
+                        New to <span>DUIDOL</span> ? <a href="/register">Sign up</a>
                     </div>
                 </form>
             </div>    

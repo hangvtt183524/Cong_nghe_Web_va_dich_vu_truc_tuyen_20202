@@ -1,22 +1,16 @@
-const mongodb = require('mongodb');
-const mongoClient = mongodb.MongoClient();
+const mongoose = require('mongoose');
 
-var url = 'mongodb://localhost:27017/DuIdol_Database';
-
-mongoClient.connect(url, (err, db) => {
-    if (err) throw err;
-    else {
-        var users = db.collection('user');
-        var dataUser = {
-            userName: "JoongNine",
-            password: "1234567890",
-            email: "joongnine@gmail.com"
-        }
-
-        users.insertOne(dataUser, (err, res) => {
-            if (err) throw err;
-            console.log("Da them mot user vao collection");
-        });
+const userSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
     }
-    db.close();
-});
+})
+
+const User = new mongoose.model('User', userSchema);
+
+module.exports = User;

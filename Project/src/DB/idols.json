@@ -1,0 +1,34 @@
+[
+    {
+        "_id": 0,
+        "name": " ",
+        "isGroup": true,
+        "member": [
+            {
+                "_id": 1,
+                "name": " "
+            }, 
+
+            {
+                "_id": 2,
+                "name": " "
+            }
+        ],
+        "description": "",
+        "img_default": " ",
+        "img_collections": [
+
+        ],
+        "products": {
+            
+        },
+        "contacts": {
+
+        },
+        "items": [
+            {
+
+            }
+        ]
+    }
+]

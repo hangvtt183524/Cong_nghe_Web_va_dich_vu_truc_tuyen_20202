@@ -2,7 +2,7 @@ const mongodb = require('mongodb');
 const mongoClient = mongodb.MongoClient();
 
 
-var url = 'mongodb://localhost:27017/DuIdol_Database';
+var url = 'mongodb://localhost:27017/duidol';
 
 mongoClient.connect(url, (err, db) => {
     if (err) throw err;

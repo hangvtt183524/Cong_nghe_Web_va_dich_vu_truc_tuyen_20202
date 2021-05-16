@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 0;
+	background-color: #e2deeb;
 }
 header {
     background-color: white;
@@ -28,21 +29,135 @@ header {
     font-size: 1em;
     color: #c0b5d3;
 }
+/* goi y */
+.goiy {
+	display: flex;
+	padding-top: 3em;
+	padding-bottom: 1em;
+	background-color: #e2deeb;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+.cheer {
+	height: 20em;
+	background-color: #c0b5d3;
+	width: 25em;
+	margin-left: 1em;
+	overflow: hidden;
+
+}
+.cheer h2 {
+	font-size: 2.5em;
+	color: white;
+	text-align: left;
+	line-height: 1.5em;
+	margin-left: 2em;
+	margin-top: 1.5em;
+}
+
+.slider input {
+	display: none;
+  }
+  .slider {
+	width: 50em;
+	height: 20em;
+	overflow: hidden;
+	position: relative;
+	left: 0;
+  }
+  .slides {
+	display: flex;
+	height: 20em;
+	width: 500%;
+  }
+  .slides img {
+	width: 50em;
+	height: 20em;
+  }
+  .slide {
+	width: 20%;
+	transition: 2s;
+  }
+  .navigation-manual {
+	bottom: 5%;
+	display: flex;
+	align-items: center;
+	left: 40%;
+	position: absolute;
+  }
+  .manual-btn {
+	border: 2px solid #40D3DC;
+	padding: 0.3em;
+	border-radius: 1em;
+	cursor: pointer;
+	transition: 1s;
+	margin-left: 1em;
+  }
+  #radio1:checked ~ .first{
+	margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+	margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+	margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+	margin-left: -60%;
+  }
+  .navigation-auto {
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+	left: 40%;
+  }
+  .navigation-auto div {
+	border: 2px solid #40D3DC;
+	padding: 0.3em;
+	border-radius: 1em;
+	transition: 1s;
+	margin-left: 1em;
+	cursor: pointer;
+  }
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40D3DC;
+  }
+  
+
+
+/* goi y */
 
 .idol-list {
-	background-color:#dfe6e9;
+	background-color:#f2f0f5;
 	padding-bottom: 5em;
     align-items: center;
     padding-top: 2em;
+	margin: 5% 10%;
 }
 
 
 .align-center {
-	text-align: center;
+	text-align: left;
+	margin-left: 10%;
 	font-size: 2em;
 	color: #4EBF74;
 	font-family: Calibri;
-	margin-bottom: 5em;
+	margin-top: 2em;
 	font-weight: bold;
 }
 
@@ -54,8 +169,8 @@ header {
 }
 .container1 .search-box {
 	position: absolute;
-	top: 13em;
-	left: 10em;
+	top: 40em;
+	right: 15%;
 	height: 2.8em;
 	background: #2f3640;
 	border-radius: 3em;
@@ -85,7 +200,7 @@ header {
 }
 .idol-container {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-row-gap: 3em;
 }
 .idol-list .card {

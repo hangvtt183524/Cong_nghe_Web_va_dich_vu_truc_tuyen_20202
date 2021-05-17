@@ -11,6 +11,7 @@ const {json} = require('express');
 const {log} = require('console');
 
 const userRoute = require('./src/route/userRoute.js');
+const idolListRoute = require('./src/route/idolListRoute.js');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -21,10 +22,7 @@ app.set('view engine', 'ejs');
 //app.set('view engine', 'html');
 
 app.use('/', userRoute);
-
-app.get('/idol_list', (req, res) => {
-    res.sendFile(path.join(__dirname, '/View/html/idol_list.html'));
-});
+app.use('/', idolListRoute);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/View/html/welcome_page.html'));

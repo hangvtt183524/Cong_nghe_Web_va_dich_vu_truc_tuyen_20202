@@ -1,22 +1,16 @@
 [
     {
-        "_id": 0,
         "email": "nanh.trang.140@gmail.com",
-        "password": "1234567890",
-        "remember": true
+        "password": "1234567890"
     },
 
     {
-        "_id": 1,
         "email": "hang.vtt183524@sis.hust.edu.vn",
-        "password": "hangvtt183524",
-        "remember": false
+        "password": "hangvtt183524"
     },
 
     {
-        "_id": 2,
         "email": " ",
-        "password": " ",
-        "remember": false
+        "password": " "
     }
 ]

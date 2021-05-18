@@ -96,6 +96,11 @@ h1 {
     font-size: 0.9rem; 
 }
 
+.h4text {
+    padding-left: 2em;
+    padding-top: 0.5em;
+}
+
 @media only screen and (max-width: 991px){
     .bg {
         grid-template-columns: 1fr;

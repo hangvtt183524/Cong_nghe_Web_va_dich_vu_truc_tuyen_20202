@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Reset Password</title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+    <body>
+        <div class="bg">
+            <div class="gif">
+                <img src="../image/cheering.gif" alt="cheering">
+            </div>
+            <div class="form">
+                <form action="/reset-pass/<%= id %>" method="post">
+                    <h1>Reset your password</h1>
+                    <div class="h4text"><h4>Enter your new password</h4></div>
+                    <div class="textfield">
+                        <input type="password" placeholder="New password" required name="password" id="password">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Reset">
+                    </div>
+                </form>
+            </div>    
+            
+        </div>
+        
+    </body>
+</html>

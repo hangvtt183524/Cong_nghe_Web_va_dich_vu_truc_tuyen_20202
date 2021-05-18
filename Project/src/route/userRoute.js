@@ -4,6 +4,7 @@ const path = require('path');
 const bcrypt = require('bcrypt');
 const MongoClient = require('mongodb').MongoClient;
 
+
 router.post('/login_file', async(req, res, next) => {
     try {
         var email = req.body.email;
@@ -18,6 +19,7 @@ router.post('/login_file', async(req, res, next) => {
                         console.log("email:" + email);
                         //alert("You have not registed yet!");
                         db.close();
+                        //module.exports.user = "not regester";
                         res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'You have not registered yet!'});
                     }
                     else {
@@ -32,6 +34,7 @@ router.post('/login_file', async(req, res, next) => {
                                     else {
                                         console.log("Correct");
                                         db.close();
+                                        module.exports.currentUser = {"email": email, "password": req.body.password};
                                         res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
                                     }
                                 });

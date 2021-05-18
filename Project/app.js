@@ -3,15 +3,12 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-
-//require('./src/DB/DB_connect');
-
-
 const {json} = require('express');
 const {log} = require('console');
 
 const userRoute = require('./src/route/userRoute.js');
 const idolListRoute = require('./src/route/idolListRoute.js');
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -33,11 +30,14 @@ app.get('/register', (req, res) => {
 });
 /*
 app.get('/test', (req, res) => {
-    res.sendFile(path.join(__dirname, '/test.html'));
+    var User = null;
+    User = require('./src/route/userRoute.js').user;
+    console.log(User);
 });
 
 app.post('/test', (req, res) => {
     res.json({"return": "abc"});
 });
 */
+
 app.listen(3000);

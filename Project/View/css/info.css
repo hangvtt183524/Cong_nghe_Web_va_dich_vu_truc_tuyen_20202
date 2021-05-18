@@ -162,20 +162,13 @@ h1 span {
 .sns {
     margin-left: 28%;
 }
-.stick {
+header {
     background-color: white;
     padding: 1.5em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    z-index: 100;
-    width: 100%; 
-    top: 0;
     font-family: sans-serif;
-}
-.content {
-    margin-top: 6em;
 }
 .logo {
     font-weight: bold;
@@ -189,15 +182,105 @@ h1 span {
 }
 .navigation li {
     list-style: none;
-    margin-right: 2em;
 }
+.navigation li:not(:last-child){
+	margin-right: 2em;
+}
+
 .navigation li a {
     text-decoration: none;
     font-size: 1em;
     color: #c0b5d3;
 }
-.navigation li a:hover {
-    color: indigo;
+footer {
+	background-color: #2f3640;
+	padding: 1em 0;
+}
+
+footer .container {
+	max-width: 1170px;
+	margin: auto;
+}
+footer .container .row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.footer-col {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.footer-col h4 {
+	font-size: 1.5em;
+	color: #EBF89D;
+	text-transform: capitalize;
+	position: relative;
+	margin-top: 0.5em;
+}
+
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 25px;
+	height: 2px;
+	background-color: red;
+	box-sizing: border-box;
+	width: 2em;
+}
+
+.footer-col li {
+	display: flex;
+	margin-bottom: 0.5em;
+}
+.footer-col ul li a {
+	color: #BBF8CE;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-family: Cambria;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+
+.footer-col ul li a:hover {
+	color: #CFFFE5;
+	padding-left: 0.5em;
+
+}
+
+.footer-col p {
+	margin-top: 0.2em;
+	font-size: 1em;
+	font-family: Cambria;
+	color: #BBF8CE;
+}
+.footer-col img {
+	border-radius: 0.5em;
+	max-height: 2em;
+	margin-right: 0.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+footer .container .h3 {
+	color: white;
+}
+
+.container .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.copyrightText {
+	width: 100%;
+	color: #999;
+	text-align: center;
+	font-family: Cambria;
 }
 
 @media only screen and (max-width: 991px){

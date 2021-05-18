@@ -22,8 +22,11 @@ header {
 }
 .navigation li {
     list-style: none;
-    margin-left: 2em;
 }
+.navigation li:not(:last-child){
+	margin-right: 2em;
+}
+
 .navigation li a {
     text-decoration: none;
     font-size: 1em;
@@ -147,7 +150,7 @@ header {
 	padding-bottom: 5em;
     align-items: center;
     padding-top: 2em;
-	margin: 5% 10%;
+	margin: 5% 10% 0;
 }
 
 
@@ -205,8 +208,7 @@ header {
 }
 .idol-list .card {
 	background-color: white;
-	width: 16em;
-	
+	width: 16em;	
 	margin: auto;
 	border-radius: 10px;
 	padding: 1em;
@@ -234,8 +236,7 @@ header {
     height: 20em;
     position: relative;
 }
-.card .image img {
-	
+.card .image img {	
 	max-width: 100%;
 	border-radius: 0.5em;
 	object-fit: cover;
@@ -245,10 +246,10 @@ header {
 }
 
 .card .textblock {
-	height: 4em;
+	height: 2em;
 	margin-left: 1em;
 	margin-right: 1em;
-	margin-top: 3em;
+	margin-top: 2em;
 	margin-bottom: 0.5em;
 }
 
@@ -260,14 +261,14 @@ header {
 
 .card .btnblock {
 	margin-top: 1em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.2em;
 }
 
 .info-button {
 	background-color: #c0b5d3;
 	color: white;
 	border: none;
-	padding: 1em;
+	padding: 0.5em;
 	font-family: Optima;
 	border-radius: 1em;
 	font-weight: bold;
@@ -290,10 +291,14 @@ footer .container {
 	max-width: 1170px;
 	margin: auto;
 }
-
+footer .container .row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 .footer-col {
-	width: 25%;
-	padding: 0 1em;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 .footer-col h4 {
 	font-size: 1.5em;
@@ -307,7 +312,7 @@ footer .container {
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: -10px;
+	top: 25px;
 	height: 2px;
 	background-color: red;
 	box-sizing: border-box;
@@ -367,6 +372,33 @@ footer .container .h3 {
 	text-align: center;
 	font-family: Cambria;
 }
+.changePage {
+	display: flex;
+	justify-content: center;
+	padding: 1em;
+}
+.pages {
+	position: relative;
+	display: flex;
+}
+.pages li {
+    list-style: none;
+	display: block;
+	padding: 1em;
+	background-color: #b4a1d4;
+	cursor: pointer;
+}
+.pages li:hover {
+	background-color: #9f7fd4;
+}
+.pages li:not(:last-child){
+	margin-right: 0.5em;
+}
+.pages li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+}
 
 @media only screen and (max-width: 991px){
 	.idol-container {
@@ -378,23 +410,10 @@ footer .container .h3 {
     .album .image {
         height: 25em;
     }
-    .footer-col {
-    	width: 50%;
-    	margin-bottom: 5em;
-    }
-    .navigation li {
-    	display: block;
-    }
-    .navigation {
-    	position: absolute;
-    	height: 100vh;
-    	width: 200px;
-    	
-    	top :0;
-    	right: 0;
-    	text-align: left;
-    	z-index: 2;
-    	
-    }
-    
+	.cheer h2 {
+		font-size: 2em;
+		margin-left: 1em;
+		margin-top: 3em;
+	}
+
 }

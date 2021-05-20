@@ -56,10 +56,10 @@
 				<h1 class="align-center">LIST OF IDOLS</h1>
 			</div>
 			<div class="container1">
-				<div class="search-box">
-					<input class="search-txt" type="text" name="" placeholder="Type to search" id="search-input">
-					<a class="search-btn" href="/idol_list?name=ATEEZ" id="search-btn"><img src="../image/search-icon.png"></a>
-				</div>
+				<form class="search-box" id='form' method="post" action="/idol_list">
+					<input class="search-txt" type="text" placeholder="Type to search" id="search-input" required name="name">
+					<a class="search-btn" id="search-btn"><img src="../image/search-icon.png" id="search-image"></a>
+				</form>
 			</div>
 			<br>
 			<div class="idol-container">
@@ -87,9 +87,7 @@
 				<li><a href="">&#10094</a></li>
                 <li><a href="">1</a></li>
                 <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>
+				<li><a href="">3</a></li>
 				<li><a href="">&#10095</a></li>
             </ul>	
 		</div>

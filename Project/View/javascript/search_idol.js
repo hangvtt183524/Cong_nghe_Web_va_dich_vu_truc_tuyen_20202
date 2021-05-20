@@ -1,8 +1,9 @@
 var inputSearch = document.getElementById('search-input');
+var clickSearch = document.getElementById('search-image');
+var form = document.getElementById('form');
 
-inputSearch.addEventListener("keyup", function(event) {
-    if (event.keyCode === 13) {
-     event.preventDefault();
-     document.getElementById("search-btn").click();
-    }
+
+clickSearch.addEventListener('click', () => {
+    document.getElementById('form').submit();
 });
+  

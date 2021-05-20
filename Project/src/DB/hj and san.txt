@@ -1,0 +1,36 @@
+-Hongjoong:
+ +pic1: Photoshoot for album  EP1
+	../image/hongjoong_1.jpg
+ +pic2: Fansign for album EP3
+	../image/hongjoong_2.jpg
+ +pic3: MAMA award 2019
+	../image/hongjoong_3.jpg
+ +pic4: Photoshoot for The Star magazine
+	../image/hongjoong_4.jpg
+ +pic5: photoshoot for album EP3
+	../image/hongjoong_5.jpg
+ +info: 
+Hongjong is a member of ATEEZ under KQ Entertainment. He debuted through the album <TREASURE EP.1 : All To Zero> on October 24th, 2018. His position in the group is leader and rapper.
+ +link sản phẩm:
+https://shopee.vn/B%E1%BB%99-%E1%BA%A3nh-ATEEZ-%E2%80%98Zero-Fever-Part-2%E2%80%99-i.309029347.9432675907
+https://shopee.vn/Ateez-Album-Fever-Ep1-nguy%C3%AAn-seal-%C4%91%C6%B0%E1%BB%A3c-ch%E1%BB%8Dn-ver.-i.116450912.6649020511
+https://www.ktown4u.com/iteminfo?grp_no=1741898&goods_no=41671
+-San: 
+ +pic1: ATEEZ concert
+	../image/san_1.jpg
+ +pic2: Promoting Inception
+	../image/san_2.jpg
+ +pic3: Promoting Wave
+	../image/san_3.jpg
+ +pic4: MAMA award 2019
+	../image/san_4.jpg
+ +pic5: Photoshoot for Singles magazine
+	../image/san_5.jpg
+ +info:
+San is a member of ATEEZ under KQ Entertainment. He debuted through the album <TREASURE EP.1 : All To Zero> on October 24th, 2018. His position in the group is vocalist and dancer.
+ +link sản phẩm: 
+https://shopee.vn/-M%C3%A9oStore-C%C3%B3-s%E1%BA%B5n-card-pre-ATEEZ-c%E1%BB%A7a-APPLE-MUSIC-FANSIGN-POB-i.232009401.2928458651
+https://www.ktown4u.com/iteminfo?grp_no=1723496&goods_no=56372
+https://www.ktown4u.com/iteminfo?grp_no=1742520&goods_no=47361
+
+	

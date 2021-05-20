@@ -19,7 +19,6 @@ router.post('/login_file', async(req, res, next) => {
                         console.log("email:" + email);
                         //alert("You have not registed yet!");
                         db.close();
-                        //module.exports.user = "not regester";
                         res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'You have not registered yet!'});
                     }
                     else {

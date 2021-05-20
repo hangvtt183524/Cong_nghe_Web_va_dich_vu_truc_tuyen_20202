@@ -83,48 +83,7 @@ header {
     box-shadow: 15px 15px 15px #b2bec3;
 	background: #FFEAFF;
 }
-.hotIdol h2 {
-    text-align: center;
-    color: #c0b5d3;
-    padding: 1em;
-    font-size: 2em;
-}
-.hotIdol {
-    background-color: #f2f0f5;
-    margin: 0 10%;
-}
-.idols {
-    padding-bottom: 5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 
-}
-.idol {
-    width: 12em;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;  
-    box-shadow: 0px 10px 5px #b2bec3;
-    border: 1em solid white;
-}
-.idol .imgIdol {
-    width: 100%;
-    height: 12em;
-    position: relative;
-}
-.idol .imgIdol img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-.idolName {
-    text-align: center;
-    font-size: 1rem;
-    font-family: sans-serif;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
 .info-button {
     margin-top: 2em;
     padding: 0.5em;

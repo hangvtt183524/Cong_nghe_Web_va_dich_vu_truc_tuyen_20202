@@ -2,7 +2,7 @@ body {
     margin: 0;
 }
 .p0 {
-    background-color: #dfe6e9;
+    background-color: #e2deeb;
     padding: 0.5em 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -18,26 +18,48 @@ h1 span {
     font-size: 1.5rem;
 }
 .p1 {
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(2, 50% 50%);
 }
-
-.p1-1 img {
-    width: 100%;
-}
 .p1-1 {
     position: relative;
+    height: 30em;
+}
+.p1-1 .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #efecf5;
+}
+.p1-1 .image img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+}
+.p1-2{
+    height: fit-content;
+}
+.p1-2 p{
+    font-size: 1.5rem;
+    line-height: 2em;
+    font-family: sans-serif;
+    padding: 2em;
 }
 .overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     overflow: hidden;
     width: 100%;
     height: 0;
-    transition: .5s ease;    
+    transition: .5s ease;   
+    z-index: 100; 
 }
 .p1-1:hover .overlay {
     height: 15%;
@@ -54,7 +76,7 @@ h1 span {
 .preBtn {
     position: absolute;
     cursor: pointer;
-    top: 50%;
+    top: 45%;
     width: auto;    
     padding: 1em;
     color:white;
@@ -64,6 +86,7 @@ h1 span {
     border-radius: 0 3px 3px 0; 
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 .preBtn:hover {
     background-color:rgba(0, 0, 0, 0.6);
@@ -71,7 +94,7 @@ h1 span {
 .nextBtn {
     position: absolute;
     cursor: pointer;
-    top: 50%;
+    top: 45%;
     width: auto;    
     padding: 1em;
     color:white;
@@ -82,18 +105,13 @@ h1 span {
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
     right: 0;
+    z-index: 100;
 }
 .nextBtn:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
-.p1-2 p{
-    font-size: 1.5rem;
-    line-height: 2em;
-    font-family: sans-serif;
-    margin: 3.5em 2em 0 2em;
-}
 .p2 {
-    background-color: #dfe6e9;
+    background-color: #e2deeb;
     padding-bottom: 5em;
     align-items: center;
 }
@@ -103,6 +121,10 @@ h1 span {
     grid-template-columns: repeat(3, 1fr);
 	grid-row-gap: 3em;
 }
+.p2-1 a {
+    text-decoration: none;
+    color: black;
+}
 .p2 h2 {
     margin: 0;
     color: white;
@@ -111,22 +133,28 @@ h1 span {
     padding: 1em 0 1em;
 }
 .album {
-    width: 12em;
+    width: 15em;
     margin: auto;
     background-color: white;
     border-radius: 10px;  
     box-shadow: 0px 10px 5px #b2bec3;
-    border: 1em solid white;
+    padding: 1em;
+}
+.album:hover{
+    box-shadow: 15px 15px 15px #b2bec3;
+	background: #FFEAFF;
 }
 .album .imgIdol {
     width: 100%;
-    height: 12em;
+    height: 15em;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .album .imgIdol img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
     position: absolute;
 }
 .albname {
@@ -135,9 +163,7 @@ h1 span {
     font-family: sans-serif;
     padding-top: 1em;
 }
-.albname span {
-    display: block;   
-}
+
 .p3 {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -148,8 +174,8 @@ h1 span {
 .p3-1 h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 3em;
-    color: #c2dde9;
+    margin-top: 20%;
+    color: #cfc7e4;
 }
 .p3-1 img {
     width: 4em;
@@ -296,7 +322,7 @@ footer .container .h3 {
     }
     .p3-1 h2 {
         font-size: 3rem;
-        margin-top: 1em;
+        margin-top: 10%;
     }
     .p3-1 img {
         width: 7em;

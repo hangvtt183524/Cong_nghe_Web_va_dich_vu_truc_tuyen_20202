@@ -28,6 +28,10 @@ app.get('/', (req, res) => {
 app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, '/View/html/register.html'));
 });
+
+app.get('/info', (req, res) => {
+    res.sendFile(path.join(__dirname, '/View/html/info.html'));
+})
 /*
 app.get('/test', (req, res) => {
     var User = null;

@@ -7,11 +7,11 @@
         <header>
 			<a href="" class="logo">DUIDOL.</a>
             <ul class="navigation">
-                <li><a href="">Home</a></li>
-                <li><a href="">Collection</a></li>
-                <li><a href="">Items</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/item">Items</a></li>
+                <li><a href="/idol_list?page=1">Idol List</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Sign up</a></li>
             </ul>
 		</header>
         <div class="p0">
@@ -58,14 +58,16 @@
         <div class="p2">
             <h2>Danh sách đĩa nhạc</h2>
             <div class="p2-1">
-                <a href="">
-                    <div class="album">
-                        <div class="imgIdol">
-                            <img src="../image/album1.png" alt="album1">
+                <% infos.products.forEach((product) => { %>
+                    <a href="<%=product.link %>" target="_blank">
+                        <div class="album">
+                            <div class="imgIdol">
+                                <img src="../image/album1.png" alt="album1">
+                            </div>
+                             <div class="albname"><%=product.al_name %></div>
                         </div>
-                         <div class="albname">ATEEZ Treasure EP1:All to Zero</div>
-                    </div>
-                </a>  
+                    </a>  
+				<% }); %>  
             </div>       
         </div>
         <div class="p3">

@@ -6,6 +6,13 @@ const app = express();
 const {json} = require('express');
 const {log} = require('console');
 
+var session = require('express-session');
+app.use(session({
+    secret: 'topsecret', 
+    resave: true, 
+    saveUninitialized: true
+}));
+
 const userRoute = require('./src/route/userRoute.js');
 const idolListRoute = require('./src/route/idolListRoute.js');
 const infoIdolRoute = require('./src/route/infoIdolRoute.js');
@@ -23,7 +30,7 @@ app.use('/', idolListRoute);
 app.use('/', infoIdolRoute);
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/View/html/welcome_page.html'));
+    res.render(path.join(__dirname, '/View/html', 'welcome_page.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});
 });
 
 app.get('/register', (req, res) => {
@@ -31,7 +38,7 @@ app.get('/register', (req, res) => {
 });
 
 app.get('/info', (req, res) => {
-    res.sendFile(path.join(__dirname, '/View/html/info.html'));
+    res.render(path.join(__dirname, '/View/html', 'info.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});
 })
 /*
 app.get('/test', (req, res) => {
@@ -44,5 +51,4 @@ app.post('/test', (req, res) => {
     res.json({"return": "abc"});
 });
 */
-
 app.listen(3000);

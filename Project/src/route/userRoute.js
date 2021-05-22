@@ -34,7 +34,10 @@ router.post('/login_file', async(req, res, next) => {
                                         console.log("Correct");
                                         db.close();
                                         module.exports.currentUser = {"email": email, "password": req.body.password};
-                                        res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
+                                        req.session.loggedin = true;
+                                        req.session.email = email;
+                                        res.redirect('/');
+                                        //res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
                                     }
                                 });
                             }
@@ -97,7 +100,7 @@ router.get('/login', (req, res) => {
 })
 
 router.get('/forget_password', (req, res) => {
-    res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:''});
+    res.sendFile(path.join(__dirname, '../../View/html', 'forget_pass.html'), {message:''});
 })
 
 router.post('/forget_password', async(req, res) => {
@@ -212,6 +215,15 @@ router.post('/reset-pass/:id', (req, res, next) => {
         res.send(error);
         console.log(error);
     }
+})
+
+router.get('/logout', (req, res) => {
+    req.session.destroy((err) => {
+        if(err) {
+            return console.log(err);
+        }
+        res.redirect('/');
+    });
 })
 
 module.exports = router;

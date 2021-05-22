@@ -29,7 +29,7 @@ router.get('/info/:id', async(req, res, next) => {
                             Infos['products'] = result[0].products;
                             Infos['contacts'] = result[0].contacts;
                         
-                            res.render(path.join(__dirname, '../../View/html', 'info.ejs'), { infos: Infos });
+                            res.render(path.join(__dirname, '../../View/html', 'info.ejs'), { infos: Infos, session: {"loggedin": req.session.loggedin, "email": req.session.email} });
                         } 
                     }
                     db.close();

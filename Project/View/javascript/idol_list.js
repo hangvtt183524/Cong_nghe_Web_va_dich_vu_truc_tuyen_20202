@@ -19,3 +19,7 @@ for (var i=0; i< number_page.length; i++) {
         break;
     }
 }
+
+function toInfoPage(id) {
+    window.location.href = "/info/" + id; 
+}

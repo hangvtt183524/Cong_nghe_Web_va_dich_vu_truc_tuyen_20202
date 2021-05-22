@@ -15,7 +15,7 @@
             </ul>
 		</header>
         <div class="p0">
-            <h1><span>All about</span>ATEEZ</h1>
+            <h1><span>All about</span><%=infos.name %></h1>
         </div>
         <div class="p1">
             <div class="p1-1">
@@ -23,42 +23,41 @@
                 <button class="nextBtn" onclick="plusIdol(1)">&#10095</button>
                 <div class="idol">
                     <div class="overlay">
-                        <div class="text">ATEEZ</div>
+                        <div class="text">Download</div>
                     </div>
                     <div class="image">
-                        <img src="../image/ateez.jpg" alt="pic of idol">
+                        <img src="<%=infos.main_image %>" alt="pic of idol">
                     </div>
-                </div>
-                <div class="idol">
-                    <div class="overlay">
-                        <div class="text">Hongjoong</div>
+                </div>  
+                <% infos.sub_image.forEach((imageIdol) => { %>
+                    <div class="idol">
+                        <div class="overlay">
+                            <div class="text">Download</div>
+                        </div>
+                        <div class="image">
+                            <img src="<%=imageIdol %>" alt="pic of idol">
+                        </div>
                     </div>
-                    <div class="image">
-                        <img src="../image/hongjoong_1.jpg" alt="pic of idol">
-                    </div>
-                </div>               
+				<% }); %>              
             </div>
             <div class="p1-2">
                 <p>
-                    ATEEZ là một nhóm nhạc nam Hàn Quốc được thành lập bởi KQ Entertainment vào năm 2018.
-                    Nhóm có 8 thành viên, bao gồm: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung và Jongho.
-                    Nhóm chính thức ra mắt vào ngày 24 tháng 10 năm 2018 với Album Treasure EP.1: All to Zero.
-                    Trước khi ra mắt, ATEEZ đã từng có tên là "KQ Fellaz" dựa vào tên công ty là KQ Entertainment.
-                    
+                    <%=infos.description%>    
                 </p>
             </div>
         </div>
         <div class="p2">
             <h2>Danh sách đĩa nhạc</h2>
             <div class="p2-1">
-                <a href=""><div class="album">
-                    <div class="imgIdol">
-                        <img src="../image/album1.png" alt="album1">
+                <a href="">
+                    <div class="album">
+                        <div class="imgIdol">
+                            <img src="../image/album1.png" alt="album1">
+                        </div>
+                         <div class="albname">ATEEZ Treasure EP1:All to Zero</div>
                     </div>
-                    <div class="albname">ATEEZ Treasure EP1:All to Zero</div>
-                </div>
-                
-            </div></a>        
+                </a>  
+            </div>       
         </div>
         <div class="p3">
             <div class="p3-1">
@@ -72,7 +71,7 @@
                 </div>                 
             </div>
             <div class="p3-2">
-                    <img src="../image/ateez.jpg" alt="pic of idol">
+                    <img src="<%=infos.main_image %>" alt="pic of idol">
             </div>
         </div>
         <footer>

@@ -28,6 +28,7 @@ router.get('/idol_list', async(req, res, next) => {
                             if (result[i] == undefined) {
                                 break;
                             }
+                            //console.log(result[i]._id);
                             var elementInPage = {"id": result[i]._id, "name": result[i].name, "image": result[i].image_list};
                             idols.push(elementInPage);
                         }

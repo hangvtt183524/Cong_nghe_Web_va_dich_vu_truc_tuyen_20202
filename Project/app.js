@@ -8,7 +8,7 @@ const {log} = require('console');
 
 const userRoute = require('./src/route/userRoute.js');
 const idolListRoute = require('./src/route/idolListRoute.js');
-
+const infoIdolRoute = require('./src/route/infoIdolRoute.js');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -20,6 +20,7 @@ app.set('view engine', 'ejs');
 
 app.use('/', userRoute);
 app.use('/', idolListRoute);
+app.use('/', infoIdolRoute);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/View/html/welcome_page.html'));

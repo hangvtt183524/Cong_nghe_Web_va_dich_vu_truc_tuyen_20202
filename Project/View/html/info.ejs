@@ -24,15 +24,24 @@
                 <div class="idol">
                     <div class="overlay">
                         <div class="text">Download</div>
+                        <div class>
+                            <a href="<%=infos.main_image %>" download>
+                            </a>
+                        </div>
                     </div>
                     <div class="image">
                         <img src="<%=infos.main_image %>" alt="pic of idol">
                     </div>
+
                 </div>  
                 <% infos.sub_image.forEach((imageIdol) => { %>
                     <div class="idol">
                         <div class="overlay">
                             <div class="text">Download</div>
+                            <div class>
+                                <a href="<%=imageIdol %>" download>
+                                </a>
+                            </div>
                         </div>
                         <div class="image">
                             <img src="<%=imageIdol %>" alt="pic of idol">

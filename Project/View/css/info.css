@@ -309,6 +309,11 @@ footer .container .h3 {
 	font-family: Cambria;
 }
 
+.overlay img{
+    float: right;
+    max-width: 8%;
+}
+
 @media only screen and (max-width: 991px){
     .p1 {
         grid-template-columns: 1fr;

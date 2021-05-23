@@ -35,7 +35,7 @@
                     <div class="overlay">
                         <div class="text">Download</div>
                         <div class>
-                            <form action="/info/:id" method="post" id="form" target="frame">
+                            <form action="/info" method="post" id="form" target="frame">
                                 <a href="<%=infos.main_image %>" download>
                                 <% if (session.loggedin) { %>
                                     <img src="../image/down-icon.png" onclick="document.getElementById('form').submit()">
@@ -56,7 +56,7 @@
                         <div class="overlay">
                             <div class="text">Download</div>
                             <div class>
-                                <form action="/info/:id" method="post" id="form<%=i%>" target="frame">
+                                <form action="/info" method="post" id="form<%=i%>" target="frame">
                                     <a href="<%=infos.main_image %>" download>
                                     <% if (session.loggedin) { %>
                                         <input type="hidden" name="src" value="<%=infos.sub_image[i]%>">

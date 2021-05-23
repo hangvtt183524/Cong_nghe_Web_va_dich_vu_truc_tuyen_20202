@@ -47,7 +47,7 @@ router.get('/info/:id', async(req, res, next) => {
         }
 })
 
-router.post('/info/:id', async(req, res) => {
+router.post('/info', async(req, res) => {
     var idIDol = req.params.id;
     var src = req.body.src;
     var email = req.session.email;

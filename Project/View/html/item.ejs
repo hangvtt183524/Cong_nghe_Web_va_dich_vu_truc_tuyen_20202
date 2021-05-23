@@ -7,49 +7,43 @@
         <header>
 			<a href="" class="logo">DUIDOL.</a>
             <ul class="navigation">
-                <li><a href="">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="">Collection</a></li>
-                <li><a href="">Items</a></li>
+                <li><a href="/items?categorical=album">Items</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">About Us</a></li>
             </ul>
 		</header>
         <div class="search">
-            <input type="text" name="" placeholder="Type to search">
-            <a class="searchBtn" href="#"><img src="../image/search-icon.png"></a>
+            <input type="text" name="" placeholder="Type to search" id="search-input">
+            <a class="searchBtn"><img src="../image/search-icon.png" id="search-image"></a>
         </div>
         <div class="itemCategory">
-            <a href=""><div class="cate">
+            <a href="/items?categorical=album"><div class="cate">
                 <div class="cateImg">
                     <img src="../image/album.png" alt="">
                 </div>
                 <div class="cateName">Album</div>
             </div></a>
-            <a href=""><div class="cate">
+            <a href="/items?categorical=photobook"><div class="cate">
                 <div class="cateImg">
                     <img src="../image/photobook.png" alt="">
                 </div>
                 <div class="cateName">Photobook</div>
             </div></a>
-            <a href=""><div class="cate">
-                <div class="cateImg">
-                    <img src="../image/dvd-player.png" alt="">
-                </div>
-                <div class="cateName">DVD</div>
-            </div></a>
-            <a href=""><div class="cate">
+            <a href="/items?categorical=lightstick"><div class="cate">
                 <div class="cateImg">
                     <img src="../image/lightstick.png" alt="">
                 </div>
                 <div class="cateName">Light Stick</div>
             </div></a>
-            <a href=""><div class="cate">
+            <a href="/items?categorical=magazine"><div class="cate">
                 <div class="cateImg">
                     <img src="../image/magazine.png" alt="">
                 </div>
                 <div class="cateName">Magazine</div>
             </div></a>
-            <a href=""><div class="cate">
+            <a href="/items?categorical=other"><div class="cate">
                 <div class="cateImg">
                     <img src="../image/heart.png" alt="">
                 </div>
@@ -59,28 +53,16 @@
         <div class="hotItem">
             <h2>Hot Items</h2>
             <div class="items">
-                <div class="item">
-                    <div class="imgItem">
-                        <img src="../image/album1.png" alt="album1">
+                <% items.forEach((item) => { %>
+                    <div class="item">
+                        <div class="imgItem">
+                            <img src="<%= item.image %>" alt="album1">
+                        </div>
+                        <div class="itemName"><%=item.name%></div>
+                        <a href="<%= item.link %>" class="info-button">Buy Now</a>
+    
                     </div>
-                    <div class="itemName">Treasure EP1: All to Zero</div>
-                    <a href="../html/info.html" class="info-button">Buy Now</a>
-
-                </div>
-                <div class="item">
-                    <div class="imgItem">
-                        <img src="../image/album2.png" alt="album2">
-                    </div>
-                    <div class="itemName">Treasure EP2:Zero to One</div>
-                    <a href="../html/info.html" class="info-button">Buy Now</a>
-                </div>
-                <div class="item">
-                    <div class="imgItem">
-                        <img src="../image/album3.png" alt="album3">
-                    </div>
-                    <div class="itemName">Treasure EP3:One to All</div>
-                    <a href="../html/info.html" class="info-button">Buy Now</a>
-                </div>
+				<% }); %>
             </div>
         </div>
         <footer>
@@ -107,6 +89,8 @@
 				</div>
 				<div class="copyrightText"><p>© All rights reserved</p></div>
 			</div>
+            <script src="../javascript/search_item.js"></script>
+			<script src="../javascript/block_rightclick.js"></script>
 		</footer>
     </body>
 </html>

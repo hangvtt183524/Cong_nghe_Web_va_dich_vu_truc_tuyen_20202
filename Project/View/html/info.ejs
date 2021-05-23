@@ -7,11 +7,19 @@
         <header>
 			<a href="" class="logo">DUIDOL.</a>
             <ul class="navigation">
+                <% if (session.loggedin) { %>
+                    <li>Hi, <%= session.email %></a></li>
+                <% } %> 
                 <li><a href="/">Home</a></li>
-                <li><a href="/item">Items</a></li>
+                <li><a href="/items/album">Items</a></li>
                 <li><a href="/idol_list?page=1">Idol List</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Sign up</a></li>
+                <% if (session.loggedin) { %>
+                    <li><a href="/logout">Log out</a></li>
+                <% } else { %> 
+                    <li><a href="/login" >Login</a></li>
+                    <li><a href="/register">Sign up</a></li>
+                <% } %> 
+                <!-- <li><a href="">About Us</a></li> -->
             </ul>
 		</header>
         <div class="p0">
@@ -26,6 +34,9 @@
                         <div class="text">Download</div>
                         <div class>
                             <a href="<%=infos.main_image %>" download>
+                                <% if (session.loggedin) { %>
+                                    <img src="../image/down-icon.png">
+                                <% } %> 
                             </a>
                         </div>
                     </div>
@@ -40,6 +51,9 @@
                             <div class="text">Download</div>
                             <div class>
                                 <a href="<%=imageIdol %>" download>
+                                    <% if (session.loggedin) { %>
+                                        <img src="../image/down-icon.png">
+                                    <% } %> 
                                 </a>
                             </div>
                         </div>

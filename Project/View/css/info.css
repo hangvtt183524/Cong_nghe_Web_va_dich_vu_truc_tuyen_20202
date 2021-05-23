@@ -24,7 +24,8 @@ h1 span {
 }
 .p1-1 {
     position: relative;
-    height: 30em;
+    height: 100%;
+    min-height: 30em;
 }
 .p1-1 .image{
     display: flex;

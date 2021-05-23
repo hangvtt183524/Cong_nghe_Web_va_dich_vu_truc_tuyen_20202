@@ -14,6 +14,7 @@
                 <li><a href="/items/album">Items</a></li>
                 <li><a href="/idol_list?page=1">Idol List</a></li>
                 <% if (session.loggedin) { %>
+                    <li><a href="/myaccount">My account</a></li>
                     <li><a href="/logout">Log out</a></li>
                 <% } else { %> 
                     <li><a href="/login" >Login</a></li>
@@ -29,15 +30,20 @@
             <div class="p1-1">
                 <button class="preBtn" onclick="plusIdol(-1)">&#10094</button>
                 <button class="nextBtn" onclick="plusIdol(1)">&#10095</button>
+                
                 <div class="idol">
                     <div class="overlay">
                         <div class="text">Download</div>
                         <div class>
-                            <a href="<%=infos.main_image %>" download>
+                            <form action="/info/:id" method="post" id="form" target="frame">
+                                <a href="<%=infos.main_image %>" download>
                                 <% if (session.loggedin) { %>
-                                    <img src="../image/down-icon.png">
+                                    <img src="../image/down-icon.png" onclick="document.getElementById('form').submit()">
+                                    <input type="hidden" name="src" value="<%=infos.main_image %>">
                                 <% } %> 
-                            </a>
+                                </a>
+                            </form>
+                            <iframe name="frame" style="position: absolute; top: -1px; left: -1px; height: 1px; display: none;"></iframe>
                         </div>
                     </div>
                     <div class="image">
@@ -45,23 +51,28 @@
                     </div>
 
                 </div>  
-                <% infos.sub_image.forEach((imageIdol) => { %>
+                <% for(var i=0; i< infos.sub_image.length; i++) { %>
                     <div class="idol">
                         <div class="overlay">
                             <div class="text">Download</div>
                             <div class>
-                                <a href="<%=imageIdol %>" download>
+                                <form action="/info/:id" method="post" id="form<%=i%>" target="frame">
+                                    <a href="<%=infos.main_image %>" download>
                                     <% if (session.loggedin) { %>
-                                        <img src="../image/down-icon.png">
+                                        <input type="hidden" name="src" value="<%=infos.sub_image[i]%>">
+                                        <img src="../image/down-icon.png" onclick="document.getElementById('form<%=i%>').submit()">
+                                        
                                     <% } %> 
-                                </a>
+                                    </a>
+                                </form>
+                                <iframe name="frame" style="position: absolute; top: -1px; left: -1px; height: 1px; display: none;"></iframe>
                             </div>
                         </div>
                         <div class="image">
-                            <img src="<%=imageIdol %>" alt="pic of idol">
+                            <img src="<%=infos.sub_image[i] %>" alt="pic of idol">
                         </div>
                     </div>
-				<% }); %>              
+				<% } %>              
             </div>
             <div class="p1-2">
                 <p>

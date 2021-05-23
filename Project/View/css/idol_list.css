@@ -216,11 +216,7 @@ header {
 	text-align: center;
 	font-family: sans-serif;
 	max-width: 75%;
-	padding-bottom: 30px;
-}
-.idol-list .card:hover {
-	box-shadow: 15px 15px 15px #b2bec3;
-	background: #FFEAFF;
+	
 }
 .card .name {
 	font-size: 18px;
@@ -231,13 +227,14 @@ header {
 }
 
 .card .image {
-	margin-top: 1em;
+	margin-top: 0.5em;
 	width: 100%;
     height: 20em;
     position: relative;
 }
 .card .image img {	
 	max-width: 100%;
+	max-height: 100%;
 	border-radius: 0.5em;
 	object-fit: cover;
 	position: absolute;
@@ -245,38 +242,21 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.card .textblock {
-	height: 2em;
-	margin-left: 1em;
-	margin-right: 1em;
-	margin-top: 2em;
-	margin-bottom: 0.5em;
-}
-
-.card .textblock .text {
-	text-align: left;
-	font-family: sans-serif;
-	font-size: 1rem;
-}
-
 .card .btnblock {
 	margin-top: 1em;
 	margin-bottom: 0.2em;
-}
-
-.info-button {
 	background-color: #c0b5d3;
-	color: white;
-	border: none;
-	padding: 0.5em;
-	font-family: Optima;
-	border-radius: 1em;
-	font-weight: bold;
-	font-size: 1em;
-	text-decoration: none;
+	width: 5em;
+	height: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 2em;
+	cursor: pointer;
 }
 
-.info-button:hover {
+.card .btnblock:hover {
 	box-shadow: 0px 5px 5px #b2bec3;
 	background-color: #A993D0;
 }

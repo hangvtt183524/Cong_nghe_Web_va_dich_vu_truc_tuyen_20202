@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>My account</title>
+        <link rel="stylesheet" href="../css/acc.css">
+    </head>
+    <body>
+        <header>
+			<a href="" class="logo">DUIDOL.</a>
+            <ul class="navigation">
+                <% if (session.loggedin) { %>
+                    <li>Hi, <%= session.email %></a></li>
+                <% } %> 
+                <li><a href="/">Home</a></li>
+                <li><a href="">Items</a></li>
+                <li><a href="/idol_list?page=1">Idol List</a></li>
+                <% if (session.loggedin) { %>
+                    <li><a href="/myaccount">My account</a></li>
+                    <li><a href="/logout">Log out</a></li>
+                <% } else { %> 
+                    <li><a href="/login" >Login</a></li>
+                    <li><a href="/register">Sign up</a></li>
+                <% } %> 
+                <!-- <li><a href="">About Us</a></li> -->
+            </ul>
+		</header>
+        <% if (session.loggedin) { %>
+            <h1>Welcome back, <%=session.email %></h1>
+        <% } %> 
+        <div class="saved-bg">
+            <h2>Saved Picture</h2>
+            <div class="saved">
+                <%for(var i=0; i< savedImg.length; i++) { %>
+                <div class="saved-image">
+                    <div class="image">
+                        <img src="<%=savedImg[i].src%>" alt="">
+                    </div>
+                </div>
+                <%}%>
+            </div>
+        </div>
+        <footer>
+			<div class="container">
+				<div class="row">
+					<div class="footer-col">
+						<h4>Help</h4>
+						<ul>
+							<li><a href="">How to...?</a>
+							<li><a href="">Use</a>
+						</ul>
+					</div>
+					<div class="footer-col">
+						<h4>Contact us</h4>
+						<ul>
+							<li><img src="../image/address_icon.jpg">
+							<p>Hanoi University of <br>Science and Technology</p>
+							<li><img src="../image/phone_icon.png">
+							<p>(+84) 123 456 789</p>
+							<li><img src="../image/mail_icon.png">
+							<p>duidol@sis.hust.edu.vn</p>
+						</ul>
+					</div>
+				</div>
+				<div class="copyrightText"><p>© All rights reserved</p></div>
+			</div>
+		</footer>
+    </body>
+</html>

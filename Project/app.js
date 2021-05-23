@@ -17,6 +17,7 @@ const userRoute = require('./src/route/userRoute.js');
 const idolListRoute = require('./src/route/idolListRoute.js');
 const infoIdolRoute = require('./src/route/infoIdolRoute.js');
 const itemRoute = require('./src/route/itemRoute.js');
+const myAccRoute = require('./src/route/myAccRoute.js');
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -30,6 +31,7 @@ app.use('/', userRoute);
 app.use('/', idolListRoute);
 app.use('/', infoIdolRoute);
 app.use('/', itemRoute);
+app.use('/', myAccRoute);
 
 app.get('/', (req, res) => {
     res.render(path.join(__dirname, '/View/html', 'welcome_page.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});

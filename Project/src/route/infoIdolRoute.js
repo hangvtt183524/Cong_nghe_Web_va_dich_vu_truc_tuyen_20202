@@ -24,16 +24,16 @@ router.get('/info/:id', async(req, res, next) => {
                     else {
                         if (result.length > 0)
                         {
-                            // for(var i = 0; i<result[0].products.length; i++){
-                            //     var temp = youtubeThumbnail(result[0].products[i]).high.url;
-                            //     temps.push(temp);
-                            // }
+                            for(var i = 0; i<result[0].products.length; i++){
+                                var temp = youtubeThumbnail(result[0].products[i].link).high.url;
+                                temps.push(temp);
+                            }
                             Infos['name'] = result[0].name;
                             Infos['description'] = result[0].description;
                             Infos['main_image'] = result[0].main_image;
                             Infos['sub_image'] = result[0].sub_image;
                             Infos['products'] = result[0].products;
-                            // Infos['products_image'] = temps;
+                            Infos['products_images'] = temps;
                             Infos['contacts'] = result[0].contacts;
                             res.render(path.join(__dirname, '../../View/html', 'info.ejs'), { infos: Infos, session: {"loggedin": req.session.loggedin, "email": req.session.email} });
                         } 

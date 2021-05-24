@@ -83,16 +83,16 @@
         <div class="p2">
             <h2>Danh sách đĩa nhạc</h2>
             <div class="p2-1">
-                <% infos.products.forEach((product) => { %>
-                    <a href="<%=product.link %>" target="_blank">
+                <% for(var i=0; i < infos.products.length; i++) { %>
+                    <a href="<%=infos.products[i].link %>" target="_blank">
                         <div class="album">
                             <div class="imgIdol">
-                                <img src="../image/album1.png" alt="album1">
+                                <img src="<%=infos.products_images[i]%>" alt="album1">
                             </div>
-                             <div class="albname"><%=product.al_name %></div>
+                             <div class="albname"><%=infos.products[i].al_name %></div>
                         </div>
                     </a>  
-				<% }); %>  
+				<% } %>  
             </div>       
         </div>
         <div class="p3">

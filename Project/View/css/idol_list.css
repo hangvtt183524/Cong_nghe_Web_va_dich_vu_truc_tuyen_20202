@@ -208,7 +208,7 @@ header {
 	grid-template-columns: repeat(3, 1fr);
 	grid-row-gap: 3em;
 }
-.idol-list .card {
+.card {
 	background-color: white;
 	width: 16em;	
 	margin: auto;
@@ -219,6 +219,10 @@ header {
 	font-family: sans-serif;
 	max-width: 75%;
 	
+}
+.card:hover {
+	box-shadow: 15px 15px 15px #b2bec3;
+	background: #FFEAFF;
 }
 .card .name {
 	font-size: 18px;

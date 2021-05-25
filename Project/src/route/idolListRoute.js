@@ -32,7 +32,7 @@ router.get('/idol_list', async(req, res, next) => {
                             var elementInPage = {"id": result[i]._id, "name": result[i].name, "image": result[i].image_list};
                             idols.push(elementInPage);
                         }
-                        res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"loggedin": req.session.loggedin, "email": req.session.email}});
+                        res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"email": req.session.email}});
                         
                     }
                     db.close();
@@ -74,12 +74,12 @@ router.get('/idol_list', async(req, res, next) => {
                                 var elementInPage = {"id": result[i]._id, "name": result[i].name, "image": result[i].image_list};
                                 idols.push(elementInPage);
                             }
-                            res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"loggedin": req.session.loggedin, "email": req.session.email} });
+                            res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"email": req.session.email} });
                         }
                         else {
                             console.log("name: " + nameIdol);
                             console.log(result.length);
-                            res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"loggedin": req.session.loggedin, "email": req.session.email}});
+                            res.render(path.join(__dirname, '../../View/html', 'idol_list.ejs'), { idols: idols, session: {"email": req.session.email}});
                         }
                     }
                     db.close();

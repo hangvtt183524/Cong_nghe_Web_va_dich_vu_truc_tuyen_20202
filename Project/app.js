@@ -34,12 +34,12 @@ app.use('/', itemRoute);
 app.use('/', myAccRoute);
 
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, '/View/html', 'welcome_page.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});
+    res.render(path.join(__dirname, '/View/html', 'welcome_page.ejs'), {session: {"email": req.session.email}});
 });
 
 
 app.get('/info', (req, res) => {
-    res.render(path.join(__dirname, '/View/html', 'info.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});
+    res.render(path.join(__dirname, '/View/html', 'info.ejs'), {session: {"email": req.session.email}});
 })
 /*
 app.get('/test', (req, res) => {

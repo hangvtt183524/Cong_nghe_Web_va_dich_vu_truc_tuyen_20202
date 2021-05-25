@@ -7,11 +7,19 @@
         <header>
 			<a href="" class="logo">DUIDOL.</a>
             <ul class="navigation">
+                <% if (session.email) { %>
+                    <li>Hi, <%= session.email %></a></li>
+                <% } %> 
                 <li><a href="/">Home</a></li>
-                <li><a href="">Collection</a></li>
-                <li><a href="/items?categorical=album">Items</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">About Us</a></li>
+                <li><a href="/items/album">Items</a></li>
+                <li><a href="/idol_list?page=1">Idol List</a></li>
+                <% if (session.email) { %>
+                    <li><a href="/myaccount">My account</a></li>
+                    <li><a href="/logout">Log out</a></li>
+                <% } else { %> 
+                    <li><a href="/login" >Login</a></li>
+                    <li><a href="/register">Sign up</a></li>
+                <% } %> 
             </ul>
 		</header>
         <div class="search">
@@ -58,7 +66,7 @@
                         <div class="imgItem">
                             <img src="<%= item.image %>" alt="album1">
                         </div>
-                        <div class="itemName"><%=item.name%></div>
+                        <div class="textBlock"><div class="itemName"><%=item.name%></div></div>
                         <a href="<%= item.link %>" class="info-button">Buy Now</a>
     
                     </div>

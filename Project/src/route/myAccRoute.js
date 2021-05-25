@@ -18,7 +18,7 @@ router.get('/myaccount', (req, res) => {
                         savedImg.push(temp);
                     }
                     console.log(savedImg);
-                    res.render(path.join(__dirname, '../../View/html', 'acc.ejs'), { savedImg: savedImg, session: {"loggedin": req.session.loggedin, "email": req.session.email} });                   
+                    res.render(path.join(__dirname, '../../View/html', 'acc.ejs'), { savedImg: savedImg, session: {"email": req.session.email} });                   
                 }
                 db.close();
             });  

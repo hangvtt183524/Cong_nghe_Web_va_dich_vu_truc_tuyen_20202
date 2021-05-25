@@ -7,13 +7,13 @@
 		<header>
 			<a href="" class="logo">DUIDOL.</a>
             <ul class="navigation">
-				<% if (session.loggedin) { %>
+				<% if (session.email) { %>
                     <li>Hi, <%= session.email %></a></li>
                 <% } %> 
                 <li><a href="/">Home</a></li>
                 <li><a href="/items?categorical=album">Items</a></li>
 				<li><a href="/idol_list?page=1">Idol List</a></li>
-                <% if (session.loggedin) { %>
+                <% if (session.email) { %>
 					<li><a href="/myaccount">My account</a></li>
                     <li><a href="/logout">Log out</a></li>
                 <% } else { %> 

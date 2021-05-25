@@ -29,7 +29,7 @@ router.get('/items', async(req, res, next) => {
                                 var itemInPage = {"image": result[i].image, "name": result[i].name, "link": result[i].link};
                                 Items.push(itemInPage);
                             }
-                            res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { items: Items });
+                            res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { items: Items, session: {"email": req.session.email} });
                         } 
                     }
                     db.close();
@@ -78,9 +78,9 @@ router.get('/items', async(req, res, next) => {
                                 var itemInPage = {"image": result[i].image, "name": result[i].name, "link": result[i].link};
                                 Items.push(itemInPage);
                             }
-                            res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { items: Items });
+                            res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { items: Items, session: {"email": req.session.email} });
                         }
-                        else  res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { items: [] });
+                        else  res.render(path.join(__dirname, '../../View/html', 'item.ejs'), { session: {"email": req.session.email}, items: [] });
                     }
                     db.close();
                 });  

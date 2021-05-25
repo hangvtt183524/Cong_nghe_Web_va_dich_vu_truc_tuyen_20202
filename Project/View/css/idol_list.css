@@ -38,8 +38,7 @@ header {
 	padding-top: 3em;
 	padding-bottom: 1em;
 	background-color: #e2deeb;
-	padding-right: 10%;
-	padding-left: 10%;
+	margin-left: 13%;
 }
 .cheer {
 	height: 20em;
@@ -74,12 +73,15 @@ header {
 	width: 500%;
   }
   .slides img {
-	width: 50em;
-	height: 20em;
+	max-width: 50em;
+	max-height: 20em;
   }
   .slide {
 	width: 20%;
 	transition: 2s;
+	background-color: #f2f0f5;
+	display: flex;
+	justify-content: center;
   }
   .navigation-manual {
 	bottom: 5%;

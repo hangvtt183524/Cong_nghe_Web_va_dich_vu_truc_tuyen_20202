@@ -79,7 +79,7 @@ router.post('/register', async(req, res) => {
                                         dbo.collection('users').insertOne(newUser, (err, resInsert) => {
                                             if (err) throw err;
                                             console.log("inserted");  
-                                            return res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
+                                            return res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.ejs'));
                                             db.close();
                                         });
                                     }

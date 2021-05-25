@@ -15,3 +15,10 @@ for (i = 0; i < x.length; i++) {
 }
 x[idolIndex-1].style.display = "block";  
 }
+
+var modal = document.getElementById("myModal");
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

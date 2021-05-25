@@ -14,7 +14,8 @@ h2 {
 	padding-bottom: 5em;
     align-items: center;
     padding-top: 2em;
-	margin: 5% 10% ;
+	padding-bottom: 2em;
+	margin: 5% 10% 100%;
 }
 .saved {
     display: grid;
@@ -73,6 +74,8 @@ header {
 footer {
 	background-color: #2f3640;
 	padding: 1em 0;
+	bottom: 0;
+	width: 100%;
 }
 
 footer .container {
@@ -164,4 +167,9 @@ footer .container .h3 {
 .overlay img{
     float: right;
     max-width: 8%;
+}
+@media only screen and (max-width: 991px) {
+	.saved {
+		grid-template-columns: 1fr 1fr;
+	}
 }

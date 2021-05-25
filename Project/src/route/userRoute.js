@@ -34,7 +34,7 @@ router.post('/login_file', async(req, res, next) => {
                                         console.log("Correct");
                                         db.close();
                                         module.exports.currentUser = {"email": email, "password": req.body.password};
-                                        req.session.loggedin = true;
+                                        req.session.email = email;
                                         res.redirect('/');
                                         //res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.html'));
                                     }

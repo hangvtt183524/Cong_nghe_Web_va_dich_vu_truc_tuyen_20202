@@ -43,16 +43,16 @@
                         <div class>
                             <form action="/info" method="post" id="form" target="frame">
                                 <a href="<%=infos.main_image %>" download>
-                                <% if (session.loggedin) { %>
+                                <% if (session.email) { %>
                                     <img src="../image/down-icon.png" onclick="document.getElementById('form').submit()">
                                     <input type="hidden" name="src" value="<%=infos.main_image %>">
                                 <% } %> 
                                 </a>
-                                <% if (!session.loggedin) { %>
+                                <% if (!session.email) { %>
                                     <img src="../image/download-icon1.png" class="download-icon" onclick=" document.getElementById('myModal').style.display = 'block'">
                                 <% } %> 
                             </form>
-                            <iframe name="frame" style="position: absolute; top: -1px; left: -1px; height: 1px; display: none;"></iframe>
+                            <iframe name="frame" style="display: none;"></iframe>
                         </div>
                     </div>
                     <div class="image">
@@ -67,17 +67,17 @@
                             <div class>
                                 <form action="/info" method="post" id="form<%=i%>" target="frame">
                                     <a href="<%=infos.main_image %>" download>
-                                    <% if (session.loggedin) { %>
+                                    <% if (session.email) { %>
                                         <input type="hidden" name="src" value="<%=infos.sub_image[i]%>">
                                         <img src="../image/down-icon.png" onclick="document.getElementById('form<%=i%>').submit()">
                                         
                                     <% } %> 
                                     </a>
-                                    <% if (!session.loggedin) { %>
+                                    <% if (!session.email) { %>
                                         <img src="../image/download-icon1.png" class="download-icon" onclick=" document.getElementById('myModal').style.display = 'block'">
                                     <% } %>     
                                 </form>
-                                <iframe name="frame" style="position: absolute; top: -1px; left: -1px; height: 1px; display: none;"></iframe>
+                                <iframe name="frame" style="display: none;"></iframe>
                             </div>
                         </div>
                         <div class="image">

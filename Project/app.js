@@ -37,9 +37,6 @@ app.get('/', (req, res) => {
     res.render(path.join(__dirname, '/View/html', 'welcome_page.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});
 });
 
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/View/html/register.html'));
-});
 
 app.get('/info', (req, res) => {
     res.render(path.join(__dirname, '/View/html', 'info.ejs'), {session: {"loggedin": req.session.loggedin, "email": req.session.email}});

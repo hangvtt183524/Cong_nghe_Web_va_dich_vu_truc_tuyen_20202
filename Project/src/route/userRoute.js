@@ -66,7 +66,7 @@ router.post('/register', async(req, res) => {
                 else {
                     if (result.length > 0) {
                         console.log("result: " + result.length);
-                        res.json({"message": "Exists Email"});
+                        res.render(path.join(__dirname, '../../View/html', 'register.ejs'), {message:'Exist email!'});
                     }
                     else {
                         bcrypt.genSalt(10, (err, salt) => {
@@ -79,7 +79,7 @@ router.post('/register', async(req, res) => {
                                         dbo.collection('users').insertOne(newUser, (err, resInsert) => {
                                             if (err) throw err;
                                             console.log("inserted");  
-                                            return res.sendFile(path.join(__dirname, '../../View/html', 'idol_list.ejs'));
+                                            res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:''});
                                             db.close();
                                         });
                                     }
@@ -97,6 +97,10 @@ router.post('/register', async(req, res) => {
 
 router.get('/login', (req, res) => {
     res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:''});
+})
+
+router.get('/register', (req, res) => {
+    res.render(path.join(__dirname, '../../View/html', 'register.ejs'), {message:''});
 })
 
 router.get('/forget_password', (req, res) => {

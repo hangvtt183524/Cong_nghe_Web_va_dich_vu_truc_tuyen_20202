@@ -100,6 +100,10 @@ h1 {
     padding-left: 2em;
     padding-top: 0.5em;
 }
+.message {
+    color: red;
+    margin-left: 10%;
+}
 
 @media only screen and (max-width: 991px){
     .bg {

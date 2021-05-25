@@ -1,0 +1,219 @@
+[{
+  "_id": {
+    "$oid": "60a99bf8daa6d4474a1da88d"
+  },
+  "categorical": "photobook",
+  "name": "Bộ ảnh ATEEZ 'Zero'",
+  "link": "https://shopee.vn/B%E1%BB%99-%E1%BA%A3nh-ATEEZ-%E2%80%98Zero-Fever-Part-2%E2%80%99-i.309029347.9432675907",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/album5.png"
+},{
+  "_id": {
+    "$oid": "60a99c64daa6d4474a1da88e"
+  },
+  "categorical": "album",
+  "name": "ATEEZ - Fever Part. 1",
+  "link": "https://shopee.vn/Ateez-Album-Fever-Ep1-nguy%C3%AAn-seal-%C4%91%C6%B0%E1%BB%A3c-ch%E1%BB%8Dn-ver.-i.116450912.6649020511",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/album4.png"
+},{
+  "_id": {
+    "$oid": "60a99ca0daa6d4474a1da88f"
+  },
+  "categorical": "album",
+  "link": "https://www.ebay.com/itm/154018720641?hash=item23dc3b2b81:g:I28AAOSwR4JfGnvr",
+  "name": "YOONA Special EP - A Walk To Remember",
+  "ref": [
+    "Yoon Ah",
+    "SNSD"
+  ],
+  "image": "../image/yoona_album.jpeg"
+},{
+  "_id": {
+    "$oid": "60a99d0cdaa6d4474a1da890"
+  },
+  "categorical": "other",
+  "link": "https://www.ebay.com/itm/164225025996",
+  "name": "Dây chuyền kỷ niệm sinh nhật YOONA",
+  "ref": [
+    "SNSD"
+  ],
+  "image": "../image/yoonap2.jpg"
+},{
+  "_id": {
+    "$oid": "60a99d5ddaa6d4474a1da891"
+  },
+  "categorical": "other",
+  "link": "https://smglobalshop.com/collections/girls-generation/products/pre-order-taeyeon-what-do-i-call-you-black-short-sleeve-t-shirts",
+  "name": "Áo phông TAEYEON 'What Do I Call You'",
+  "ref": [
+    "Taeyeon",
+    "SNSD"
+  ],
+  "image": "../image/taeyeonp1.jpg"
+},{
+  "_id": {
+    "$oid": "60a99d8edaa6d4474a1da892"
+  },
+  "categorical": "lightstick",
+  "name": "Lightstick BIG BANG - Ver 4",
+  "link": "https://shopee.vn/BIGBANG-LIGHTSTICK-VER-4-G%E1%BA%ADy-c%E1%BB%95-v%C5%A9-i.76453644.1279335154",
+  "ref": [
+    "BigBang"
+  ],
+  "image": "../image/bigbang1.jpg"
+},{
+  "_id": {
+    "$oid": "60a99e6adaa6d4474a1da893"
+  },
+  "categorical": "photobook",
+  "name": "Khung ảnh TAEYEON 'What Do I Call You'",
+  "link": "https://smglobalshop.com/collections/girls-generation/products/pre-order-taeyeon-what-do-i-call-you-photo-frame-deco-sticker-set",
+  "ref": [
+    "Teayeon",
+    "SNSD"
+  ],
+  "image": "../image/taeyeonp2.jpg"
+},{
+  "_id": {
+    "$oid": "60a99ed5daa6d4474a1da894"
+  },
+  "categorical": "other",
+  "name": "Hộp đựng AirPods TAEYEON",
+  "link": "https://smglobalshop.com/collections/girls-generation/products/pre-order-taeyeon-what-do-i-call-you-airpods-case-with-charm",
+  "ref": [
+    "Teayeon",
+    "SNSD"
+  ],
+  "image": "../image/taeyeonp3.jpg"
+},{
+  "_id": {
+    "$oid": "60a99f07daa6d4474a1da895"
+  },
+  "categorical": "lightstick",
+  "name": "Lightstick BLACKPINK",
+  "link": "https://shopee.vn/(UP)-LIGHTSTICK-BLACKPINK-IDOL-g%E1%BA%ADy-c%E1%BB%95-v%C5%A9-ph%C3%A1t-s%C3%A1ng-BLACKPINK-t%E1%BA%B7ng-lomo-%E1%BA%A3nh-(-H%C3%A0ng-UNOFF)-i.122693476.7056614787",
+  "ref": [
+    "BlackPink"
+  ],
+  "image": "../image/blackpink1.jpg"
+},{
+  "_id": {
+    "$oid": "60a99f57daa6d4474a1da896"
+  },
+  "name": "ATEEZ - TREASURE EPILOGUE: Action To Answer",
+  "categorical": "album",
+  "link": "https://www.ktown4u.com/iteminfo?grp_no=1741898&goods_no=41671",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/album2.png"
+},{
+  "_id": {
+    "$oid": "60a99f9fdaa6d4474a1da897"
+  },
+  "categorical": "other",
+  "name": "Photocard ATEEZ (pre-order Apple Music)",
+  "link": "https://shopee.vn/-M%C3%A9oStore-C%C3%B3-s%E1%BA%B5n-card-pre-ATEEZ-c%E1%BB%A7a-APPLE-MUSIC-FANSIGN-POB-i.232009401.2928458651",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/ateez7.jpg"
+},{
+  "_id": {
+    "$oid": "60a99fe1daa6d4474a1da898"
+  },
+  "categorical": "magazine",
+  "link": "https://www.ktown4u.com/iteminfo?grp_no=1723496&goods_no=56372",
+  "name": "ATEEZ - 1st LOOK Magazine Vol. 219",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/ateez6.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a1a9daa6d4474a1da89a"
+  },
+  "categorical": "magazine",
+  "link": "https://www.ktown4u.com/iteminfo?grp_no=1742520&goods_no=47361",
+  "name": "ATEEZ - eLe Magazine Vol.1",
+  "ref": [
+    "ATEEZ"
+  ],
+  "image": "../image/ateez5.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a1f2daa6d4474a1da89b"
+  },
+  "categorical": "album",
+  "link": "https://www.ebay.com/itm/184631768484?epid=222464024&hash=item2afce935a4:g:oNYAAOSw8l1gCpAx",
+  "name": "TIFFANY - I Just Wanna Dance ",
+  "ref": [
+    "Tiffany",
+    "SNSD"
+  ],
+  "image": "../image/tiffany7.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a224daa6d4474a1da89c"
+  },
+  "categorical": "other",
+  "link": "https://www.ebay.com/itm/174046164812?hash=item2885f5b74c:g:YnEAAOSwDYVdR6hm",
+  "name": "Quạt cầm tay concert TIFFANY YOUNG",
+  "ref": [
+    "Tiffany",
+    "SNSD"
+  ],
+  "image": "../image/tiffany8.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a2a2daa6d4474a1da89d"
+  },
+  "categorical": "lightstick",
+  "name": "Lighstick RED VELVET",
+  "link": "https://shopee.vn/MANDU-BONG-LIGHTSTICK-RED-VELVET-%C4%90%C3%88N-C%E1%BB%94-V%C5%A8-C%C3%93-S%E1%BA%B4N-%E1%BA%A2NH-TH%E1%BA%ACT-i.87789815.2450343171",
+  "ref": [
+    "Red Velvet"
+  ],
+  "image": "../image/redvelvet.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a312daa6d4474a1da89e"
+  },
+  "categorical": "photobook",
+  "name": "Hộp ảnh lomo INTO1",
+  "link": "https://shopee.vn/(-kh%C3%B4ng-k%C3%A8m-h%E1%BB%99p-)-H%E1%BB%99p-%E1%BA%A3nh-lomo-INTO1-CHUANG-2021-S%C3%A1ng-T%E1%BA%A1o-Doanh-L%C6%B0u-V%C5%A9-Santa-Rikimaru-Mika-NINE-Patrick-L%C3%A2m-M%E1%BA%B7c-30-t%E1%BA%A5m-i.66738147.8437737486",
+  "ref": [
+    "Nine",
+    "AK Lưu Chương"
+  ],
+  "image": "../image/into1.jpg"
+},{
+  "_id": {
+    "$oid": "60a9a359daa6d4474a1da89f"
+  },
+  "categorical": "other",
+  "name": "Lịch để bàn INTO1",
+  "link": "https://shopee.vn/(2021-2022)-L%E1%BB%8Bch-INTO1-CHUANG-S%C3%A1ng-T%E1%BA%A1o-Doanh-2021-in-%E1%BA%A3nh-idol-th%E1%BA%A7n-t%C6%B0%E1%BB%A3ng-%C4%91%E1%BA%B9p-l%E1%BB%8Bch-%C4%91%E1%BB%83-b%C3%A0n-i.122693476.9453147198",
+  "ref": [
+    "Nine",
+    "AK Lưu Chương"
+  ],
+  "image": "../image/into10.png"
+},{
+  "_id": {
+    "$oid": "60a9a3eadaa6d4474a1da8a0"
+  },
+  "categorical": "photobook",
+  "name": "Combo ảnh nhóm INTO1",
+  "link": "https://shopee.vn/-ORDER-Combo-%E1%BA%A3nh-nh%C3%B3m-INTO1-i.43614739.11005708076",
+  "ref": [
+    "Nine",
+    "AK Lưu Chương"
+  ],
+  "image": "../image/into11.jpg"
+}]

@@ -15,14 +15,14 @@ router.get('/items', async(req, res, next) => {
 
     if (Array.isArray(categorical)) res.send("Something is wrong");
     if (categorical != undefined) {
-        categorical.replace(/^"(.+(?="$))"$/, '$1');
-        categorical.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        categorical = categorical.replace(/^"(.+(?="$))"$/, '$1');
+        categorical = categorical.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
     if (Array.isArray(item)) res.send("Something is wrong");
     if (item != undefined) {
-        item.replace(/^"(.+(?="$))"$/, '$1');
-        item.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        item = item.replace(/^"(.+(?="$))"$/, '$1');
+        item = item.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
 

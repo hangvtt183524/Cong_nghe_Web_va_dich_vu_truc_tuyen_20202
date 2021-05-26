@@ -14,8 +14,8 @@ router.get('/info/:id', async(req, res, next) => {
 
     if (Array.isArray(idIDol)) res.send("Something is wrong");
     if (idIDol != undefined) {
-        idIDol.replace(/^"(.+(?="$))"$/, '$1');
-        idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        idIdol = idIDol.replace(/^"(.+(?="$))"$/, '$1');
+        idIdol = idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
     //console.log(idIDol);
@@ -61,22 +61,22 @@ router.post('/info', async(req, res) => {
 
     if (Array.isArray(idIDol)) res.send("Something is wrong");
     if (idIDol != undefined) {
-        idIDol.replace(/^"(.+(?="$))"$/, '$1');
-        idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        idIdol = idIDol.replace(/^"(.+(?="$))"$/, '$1');
+        idIdol = idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
 
     if (Array.isArray(src)) res.send("Something is wrong");
     if (src != undefined) {
-        src.replace(/^"(.+(?="$))"$/, '$1');
-        src.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        src = src.replace(/^"(.+(?="$))"$/, '$1');
+        src = src.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
 
     if (Array.isArray(email)) res.send("Something is wrong");
     if (email != undefined) {
-        email.replace(/^"(.+(?="$))"$/, '$1');
-        email.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        email = email.replace(/^"(.+(?="$))"$/, '$1');
+        email = email.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
         try {
             Infos = {};

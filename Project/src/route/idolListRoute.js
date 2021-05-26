@@ -12,15 +12,15 @@ router.get('/idol_list', async(req, res, next) => {
     var nameIdol = req.query.name;
     if (Array.isArray(page)) res.send("Something is wrong");
     if (page != undefined) {
-        page.replace(/^"(.+(?="$))"$/, '$1');
-        page.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        page = page.replace(/^"(.+(?="$))"$/, '$1');
+        page = page.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
 
 
     if (Array.isArray(nameIdol)) res.send("Something is wrong");
     if (nameIdol != undefined) {
-        nameIdol.replace(/^"(.+(?="$))"$/, '$1');
-        nameIdol.replace(/^["'](.+(?=["']$))["']$/, '$1');
+        nameIdol = nameIdol.replace(/^"(.+(?="$))"$/, '$1');
+        nameIdol = nameIdol.replace(/^["'](.+(?=["']$))["']$/, '$1');
     }
     
     //console.log("page: " + page);

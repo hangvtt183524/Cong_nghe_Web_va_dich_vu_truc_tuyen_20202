@@ -108,7 +108,7 @@ router.get('/register', (req, res) => {
 })
 
 router.get('/forget_password', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../View/html', 'forget_pass.html'), {message:''});
+    res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:''});
 })
 
 router.post('/forget_password', async(req, res) => {
@@ -146,12 +146,12 @@ router.post('/forget_password', async(req, res) => {
                                 res.json({"message": "fail"});
                             } else {
                                 console.log('Message sent: ' +  info.response);
-                                res.json({"message": "Reset password link has been sent"});
+                                res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:'Reset password link has been sent'});
                             }
                         });
                     }
                     else {
-                        res.json({"message": "email not exist"});
+                        res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:'email not exist'});
                     }
                 }
             });

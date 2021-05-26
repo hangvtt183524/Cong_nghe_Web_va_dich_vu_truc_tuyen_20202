@@ -114,7 +114,7 @@ router.get('/register', (req, res) => {
 })
 
 router.get('/forget_password', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../View/html', 'forget_pass.html'), {message:''});
+    res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:''});
 })
 
 router.post('/forget_password', async(req, res) => {
@@ -155,12 +155,12 @@ router.post('/forget_password', async(req, res) => {
                                 res.json({"message": "fail"});
                             } else {
                                 console.log('Message sent: ' +  info.response);
-                                res.json({"message": "Reset password link has been sent"});
+                                res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:'Reset password link has been sent'});
                             }
                         });
                     }
                     else {
-                        res.send({"message": "email not exist"});
+                        res.render(path.join(__dirname, '../../View/html', 'forget_pass.ejs'), {message:'email not exist'});
                     }
                 }
             });
@@ -172,7 +172,7 @@ router.post('/forget_password', async(req, res) => {
 
 router.get('/reset-password/:id/', (req, res, next) => {
     try {
-        const id = req.params.id;
+        var id = req.params.id;
         if (Array.isArray(id)) res.send({message:'Something is wrong!'});
         if (id != undefined) {
             id = id.replace(/^"(.+(?="$))"$/, '$1');
@@ -188,7 +188,7 @@ router.get('/reset-password/:id/', (req, res, next) => {
             dbo.collection("users").findOne({"_id": o_id}, (err, result) => {
                 if (err) print(err);
                 else {
-                    res.render(path.join(__dirname, '../../View/html', 'reset-pass.ejs'), {id: id});
+                    res.render(path.join(__dirname, '../../View/html', 'reset-pass.ejs'), {id: id, message: ""});
                     
                     //else res.json({"message": "invalid page"});
                     db.close();
@@ -204,7 +204,7 @@ router.get('/reset-password/:id/', (req, res, next) => {
 
 router.post('/reset-pass/:id', (req, res, next) => {
     try {
-        const id = req.params.id;
+        var id = req.params.id;
         if (Array.isArray(id)) res.send({message:'Something is wrong!'});
         if (id != undefined) {
             id = id.replace(/^"(.+(?="$))"$/, '$1');
@@ -228,7 +228,7 @@ router.post('/reset-pass/:id', (req, res, next) => {
                                     dbo.collection('users').updateOne({"email": result.email}, {$set: {"password": hashedPassword}}, (err, resUpdate) => {
                                         if (err) throw err;
                                         console.log("updated");  
-                                        res.json({"message": "reset password successfully"});
+                                        res.render(path.join(__dirname, '../../View/html', 'reset-pass.ejs'), {id: "", message: "Reset password successfully"});
                                         db.close();
                                     });
                                 }

@@ -1,16 +1,7 @@
-[
-    {
-        "email": "nanh.trang.140@gmail.com",
-        "password": "1234567890"
-    },
-
-    {
-        "email": "hang.vtt183524@sis.hust.edu.vn",
-        "password": "hangvtt183524"
-    },
-
-    {
-        "email": " ",
-        "password": " "
-    }
-]
+[{
+  "_id": {
+    "$oid": "60a3f0542de3a29dd9605e62"
+  },
+  "email": "hochochoc999@gmail.com",
+  "password": "$2b$10$XoPPLo15cw/pcRv52V7Fn.S1XowNZaUC68ILmv5QawY.lz0mlvAzy"
+}]

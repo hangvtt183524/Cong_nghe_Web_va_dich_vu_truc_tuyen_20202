@@ -1,34 +1,338 @@
-[
+[{
+  "_id": {
+    "$oid": "60a1d39c71de81820869e5b4"
+  },
+  "name": "ATEEZ",
+  "description": "ATEEZ là một nhóm nhạc nam Hàn Quốc được thành lập bởi KQ Entertainment vào năm 2018. Nhóm có 8 thành viên, bao gồm: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi, Wooyoung và Jongho. Nhóm chính thức ra mắt vào ngày 24 tháng 10 năm 2018 với Album Treasure EP.1: All to Zero. Trước khi ra mắt, ATEEZ đã từng có tên là 'KQ Fellaz' dựa vào tên công ty là KQ Entertainment.",
+  "main_image": "../image/ateez.jpg",
+  "sub_image": [
+    "../image/hongjoong.jpg",
+    "../image/seonghwa.jpg",
+    "../image/yunho.jpg",
+    "../image/yunho.jpg",
+    "../image/yeosang.jpg",
+    "../image/san.jpg",
+    "../image/mingi.jpg",
+    "../image/wooyoung.jpg",
+    "../image/jongho.jpg"
+  ],
+  "products": [
     {
-        "_id": 0,
-        "name": " ",
-        "isGroup": true,
-        "member": [
-            {
-                "_id": 1,
-                "name": " "
-            }, 
-
-            {
-                "_id": 2,
-                "name": " "
-            }
-        ],
-        "description": "",
-        "img_default": " ",
-        "img_collections": [
-
-        ],
-        "products": {
-            
-        },
-        "contacts": {
-
-        },
-        "items": [
-            {
-
-            }
-        ]
+      "al_name": "I'm the one",
+      "link": "https://youtu.be/xtcVwuauVV0"
+    },
+    {
+      "al_name": "WAVE",
+      "link": "https://youtu.be/FIInyEWWW-s"
+    },
+    {
+      "al_name": "WONDERLAND",
+      "link": "https://www.youtube.com/watch?v=Z_BhMhZpAug"
+    },
+    {
+      "al_name": "Answer",
+      "link": "https://youtu.be/yW7wZX3DUaY"
     }
-]
+  ],
+  "contacts": [
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial"
+  ],
+  "image_list": "../image/ateez-list.jpg"
+},{
+  "_id": {
+    "$oid": "60a1d6d471de81820869e5b5"
+  },
+  "name": "Joong Archen Aydin",
+  "description": "Joong Archen Aydin - nam diễn viên trẻ quốc tịch Thái Lan. Joong sinh năm 2001, mang hai dòng máu Thái - Thổ Nhĩ Kì, hiện đang là người yêu của Nine (INTO1). Từng là quán quân Mister Teen Thailand 2018, không lâu sau đó, Joong vụt sáng thành sao khi đảm nhận vai Mingwan trong bộ phim 2Moons2 (2019) và đạt hạng 5 Male Teenager of the Year Award. Cậu ấy mới chỉ 20 tuổi, đẹp như một giấc mộng và đang theo học tại Đại học Quốc tế Stamford khoa thiết kế đồ họa. Với chiều cao ấn tượng (1m87), gương mặt đẹp trai và diễn xuất ấn tượng, Joong hiện đang là một trong những nam thần hàng đầu xứ Chùa Vàng. ",
+  "main_image": "../image/joong_7.jpg",
+  "sub_image": [
+    "../image/joong_1.jfif",
+    "../image/joong_2.jpg",
+    "../image/joong_3.jpg",
+    "../image/joong_6.jpg",
+    "../image/joong_4.jpg",
+    "../image/san.jpg",
+    "../image/joong_5.jpg",
+    "../image/nine_1.jpg",
+    "../image/joong_7.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "OXQ Profile Film",
+      "link": "https://www.youtube.com/watch?v=Se6sVCiAAT4"
+    },
+    {
+      "al_name": "OXQ ME",
+      "link": "https://www.youtube.com/watch?v=XzDHomqex9E"
+    },
+    {
+      "al_name": "2Moons2",
+      "link": "https://www.youtube.com/watch?v=0aakyvHX2xM"
+    }
+  ],
+  "contacts": [
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial"
+  ],
+  "image_list": "../image/joong_6.jpg"
+},{
+  "_id": {
+    "$oid": "60a1e19565193163f43fa46d"
+  },
+  "name": "Nine",
+  "description": "Kornchid Boonsathipakdee sinh ngày 11 tháng 7 năm 1999 tại Băng Cốc, Thái Lan, biệt danh Nine, nghệ danh Cao Khanh Trần, là sinh viên tài năng khoa ngoại ngữ của Thái Lan. Nine là một diễn viên và ca sĩ người Thái Lan. Anh được biết đến với vai Kit trong 2Moons2. Anh là cựu thành viên của nhóm nhạc nam Thái Lan OXQ và là thành viên của nhóm nhạc nam Trung Quốc INTO1 sau khi đứng thứ 5 trong chương trình thực tế sống còn Sáng Tạo Doanh dưới sự quản lý của Insight Entertainment. Nine hiện vẫn đang được cho là trong quá trình yêu đương với Joong Archen Aydin (bạn diễn cặp trong 2Moons2), dù cả hai hiện tại đang hoạt động tại hai nhóm nhạc mới.",
+  "main_image": "../image/nine_1.jpg",
+  "sub_image": [
+    "../image/nine_3.jpg",
+    "../image/nine_2.jpg",
+    "../image/nine_4.jpg",
+    "../image/nine_5.jpg",
+    "../image/nine_6.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "OXQ Profile Film",
+      "link": "https://www.youtube.com/watch?v=Se6sVCiAAT4"
+    },
+    {
+      "al_name": "Push No.5 for Cute in Input Method' Say Sweet",
+      "link": "https://www.youtube.com/watch?v=0-oz4mUzi24"
+    },
+    {
+      "al_name": "Sun' By Nine",
+      "link": "https://www.youtube.com/watch?v=5NpracktSeQ"
+    },
+    {
+      "al_name": "Hear the Story, ’You Better Not Think About Me‘",
+      "link": "https://www.youtube.com/watch?v=myM0OhR04J0"
+    }
+  ],
+  "contacts": [
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial"
+  ],
+  "image_list": "../image/nine_3.jpg"
+},{
+  "_id": {
+    "$oid": "60a1e1a765193163f43fa46e"
+  },
+  "name": "Girls' Generation ",
+  "description": "Girls' Generation hay còn được gọi là SNSD, là một nhóm nhạc nữ Hàn Quốc được S.M. Entertainment thành lập và quản lý. Đội hình ban đầu của nhóm có 9 thành viên. Năm 2017, ba thành viên Sooyoung, Tiffany và Seohyun rời SM, tuy nhiên họ vẫn là thành viên của nhóm và nhóm không tan rã. Girls’ Generation được mệnh danh là 'Nhóm nhạc quốc dân' vì những đóng góp mà các thành viên nói riêng và cả nhóm nói chung đạt được. Nhóm ra mắt công chúng vào năm 2007 với album phòng thu đầu tay Girls' Generation. Mặc dù album này đã đạt được những thành công nhất định, Girls' Generation mới thực sự trở nên nổi tiếng vào năm 2009 với đĩa đơn 'Gee'. Bài hát đã giành chiến thắng trên chương trình âm nhạc Music Bank trong 9 tuần liên tiếp, đồng thời được Melon lựa chọn là bài hát phổ biến nhất tại Hàn Quốc trong thập niên 2000s. Ngay sau đó, Girls' Generation tiếp tục xây dựng tên tuổi của mình với các đĩa đơn 'Tell Me Your Wish (Genie)', 'Oh!' và 'Run Devil Run', được phát hành từ giữa năm 2009 đến đầu năm 2010.",
+  "main_image": "../image/snsd_1.jpg",
+  "sub_image": [
+    "../image/snsd_2.jpg",
+    "../image/snsd_3.jpg",
+    "../image/snsd_4.jpg",
+    "../image/snsd_5.jpg",
+    "../image/snsd_6.jpg",
+    "../image/snsd_7.jpg",
+    "../image/snsd_8.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "Summer Night",
+      "link": "https://youtu.be/SN_KUZAbxS4"
+    },
+    {
+      "al_name": "Mr. Mr.",
+      "link": "https://www.youtube.com/watch?v=Z8j_XEn9b_8"
+    },
+    {
+      "al_name": "The Boys",
+      "link": "https://www.youtube.com/watch?v=6pA_Tou-DPI"
+    }
+  ],
+  "contacts": [
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial"
+  ],
+  "image_list": "../image/snsd_1.jpg"
+},{
+  "_id": {
+    "$oid": "60a1e36965193163f43fa46f"
+  },
+  "name": "Im Yoon Ah",
+  "description": "Im Yoon Ah, sinh ngày 30 tháng 5 năm 1990, ường được biết đến với nghệ danh Yoona (thường được phía Trung Quốc gọi là Doãn Nhi). Yoona là một nữ ca sĩ và diễn viên người Hàn Quốc. Khi còn nhỏ, nhóm nhạc nữ S.E.S. đã khiến cô mơ ước được trở thành ca sĩ. Năm 2002, Yoona trở thành thực tập sinh của S.M. Entertainment thông qua hệ thống SM Saturday Open Casting Audition. Trước khi ra mắt công chúng, cô đã xuất hiện trong một số video âm nhạc như 'Magic Castle' của TVXQ. Cô là thành viên nhóm nhạc nữ Girls' Generation và đảm nhận các vai trò: visual, center và là gương mặt đại diện của nhóm. Cô đã tham gia diễn xuất trong một số bộ phim truyền hình như You Are My Destiny (2008), Cinderella Man (2009), Love Rain (2012), Prime Minister and I (2013), Võ Thần Triệu Tử Long (2016), The K2 (2016), The King Loves (2017), Exit (2019), Hush (2020). Năm 2014, cô cùng Seohyun, một thành viên khác của Girls' Generation, tốt nghiệp trường đại học Dongguk và được trao giải thưởng thành tựu trọn đời",
+  "main_image": "../image/yoona.jpg",
+  "sub_image": [
+    "../image/yoona_1.jfif",
+    "../image/yoona_2.jfif",
+    "../image/snsd_4.jpg",
+    "../image/yoona_3.jfif",
+    "../image/yoona_4.jfif",
+    "../image/yoona_5.jfif"
+  ],
+  "products": [
+    {
+      "al_name": "Deoksugung Stonewall Walkway",
+      "link": "https://youtu.be/yuCbJykB32M"
+    },
+    {
+      "al_name": "When The Wind Blows",
+      "link": "https://youtu.be/o3pOzegB-7w"
+    },
+    {
+      "al_name": "You Are My Destiny",
+      "link": "https://youtu.be/QeQt7gfet-M"
+    },
+    {
+      "al_name": "The K2",
+      "link": "https://youtu.be/nxSHcnqI5is"
+    }
+  ],
+  "contacts": [
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial",
+    "https://facebook.com/ATEEZofficial"
+  ],
+  "image_list": "../image/yoona.jpg"
+},{
+  "_id": {
+    "$oid": "60a69033b10ad79fda11fa99"
+  },
+  "name": "Taeyeon",
+  "description": "Kim Tae-yeon (sinh ngày 9 tháng 3 năm 1989), thường được biết đến với nghệ danh Taeyeon, là một nữ ca sĩ người Hàn Quốc và là giọng ca chính, trưởng nhóm của nhóm nhạc nữ quốc dân Girls' Generation. Cô còn là thành viên của nhóm nhỏ Girls' Generation - TTS, Girls' Generation - Oh!GG cũng như nhóm nhạc đặc biệt SM the Ballad của S.M. Entertainment. Cô được đánh giá là một trong những giọng ca hay nhất Kpop. Kể từ khi ra mắt công chúng với tư cách là thành viên của Girls' Generation, Taeyeon đã nhận được nhiều đề cử và giải thưởng cho các hoạt động cá nhân của mình trong các lĩnh vực nhạc phim, dẫn chương trình phát thanh và sân khấu nhạc kịch. Cô bắt đầu sự nghiệp solo từ tháng 10 năm 2015 và từ đó đều đặn phát hành các sản phẩm âm nhạc chất lượng mang đậm dấu ấn cá nhân, cô còn thành công mở tour lưu diễn cho riêng mình khắp Châu Á nói chung và tại Nhật nói riêng. Vào đầu năm 2020, tại lễ trao giải Seoul Music Awards lần thứ 29 Taeyeon đã xuất sắc giành được giải Daesang Nhạc Số danh giá trong sự nghiệp solo của cô. Từ cuối năm 2020, Taeyeon trở thành thành viên chính trong chương trình truyền hình nổi tiếng hàng tuần \"Amazing Saturday\".",
+  "main_image": "../image/Taeyeon_5.jpg",
+  "image_list": "../image/Taeyeon_1.jpg",
+  "sub_image": [
+    "../image/Taeyeon_1.jpg",
+    "../image/Taeyeon_2.jpg",
+    "../image/Taeyeon_3.jpg",
+    "../image/Taeyeon_4.jpg",
+    "../image/Taeyeon_5.jpg",
+    "../image/Taeyeon_6.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "Can you hear me?",
+      "link": "https://youtu.be/Xq18IhDeAwQ"
+    },
+    {
+      "al_name": "MV I (feat. Verbal Jint)",
+      "link": "https://youtu.be/4OrCA1OInoo"
+    },
+    {
+      "al_name": "Four Seasons",
+      "link": "https://youtu.be/4HG_CJzyX6A"
+    },
+    {
+      "al_name": "What Do I Call You",
+      "link": "https://youtu.be/5LbFdY6vGsQ"
+    }
+  ],
+  "contacts": []
+},{
+  "_id": {
+    "$oid": "60a69299b10ad79fda11fa9a"
+  },
+  "name": "Hongjoong",
+  "description": "Hongjong is a member of ATEEZ under KQ Entertainment. He debuted through the album <TREASURE EP.1 : All To Zero> on October 24th, 2018. His position in the group is leader and rapper.",
+  "main_image": "../image/hongjoong_4.jpg",
+  "image_list": "../image/hongjoong_4.jpg",
+  "sub_image": [
+    "../image/hongjoong_1.jpg",
+    "../image/hongjoong_2.jpg",
+    "../image/hongjoong_3.jpg",
+    "../image/hongjoong_4.jpg",
+    "../image/hongjoong_5.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "Black or White",
+      "link": "https://www.youtube.com/watch?v=hMDDhHEd0zE"
+    },
+    {
+      "al_name": "I-m the One",
+      "link": "https://youtu.be/xtcVwuauVV0"
+    },
+    {
+      "al_name": "Purple Rain",
+      "link": "https://youtu.be/BzeIFzlUYZQ"
+    }
+  ],
+  "contacts": []
+},{
+  "_id": {
+    "$oid": "60a693f8b10ad79fda11fa9b"
+  },
+  "name": "AK Lưu Chương",
+  "description": "Hạng cuối cùng trong nhóm INTO1 thuộc về AK Lưu Chương, thế mạnh của anh chàng là rap. Đây cũng là vị trí mà đội hình ra mắt của Sáng Tạo Doanh đang thiếu. AK đã gây bùng nổ trong đêm diễn của Phong Đỉnh bằng lời rap đỉnh cao, dành được MVP và là thí sinh được bình chọn nhiều nhất trong đêm diễn một cách vô cùng xứng đáng. Nam rapper sinh năm 1999 dù không sở hữu nhan sắc hàng đầu nhưng lại có chiều cao tốt (1m80), vô cùng đáng yêu và có học vấn \"khủng\".",
+  "main_image": "../image/ak_2.jpg",
+  "image_list": "../image/ak_1.jpg",
+  "sub_image": [
+    "../image/ak_3.jpg",
+    "../image/ak_7.jpg",
+    "../image/ak_4.jpg",
+    "../image/ak_5.jpg",
+    "../image/ak_6.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "Phong Đỉnh",
+      "link": "https://www.youtube.com/watch?v=wiGsY30oybA"
+    },
+    {
+      "al_name": "LOVE ME LOVE ME",
+      "link": "https://www.youtube.com/watch?v=YkJIxSy5chE"
+    },
+    {
+      "al_name": "Stage Thư Xin Lỗi",
+      "link": "https://www.youtube.com/watch?v=v_8Pu_yJ6XI"
+    },
+    {
+      "al_name": "Letter Travelling Through Time",
+      "link": "https://www.youtube.com/watch?v=Fm5r5YtGjBY"
+    }
+  ],
+  "contacts": []
+},{
+  "_id": {
+    "$oid": "60a69743b10ad79fda11fa9c"
+  },
+  "name": "Tiffany",
+  "description": "Stephanie Young Hwang (sinh ngày 1 tháng 8 năm 1989), thường được biết đến với nghệ danh Tiffany hoặc Tiffany Young, là một nữ ca sĩ, diễn viên nhạc kịch người Mỹ gốc Hàn Quốc, thành viên của nhóm nhạc quốc dân Girls' Generation. Cô sinh ra tại California và đến Hàn Quốc làm thực tập sinh dưới trướng S.M. Entertainment vào năm 2004. Từ năm 2007 - 2017, cô quảng bá chính dưới tư cách là giọng ca nhóm nhạc Girls' Generation. Ngoài ra, cô còn tham gia thể hiện nhạc phim cho các bộ phim, dẫn chương trình tại show âm nhạc hàng tuần, tham gia diễn xuất nhạc kịch. Tháng 5 năm 2016, Tiffany bắt đầu hoạt động với tư cách ca sĩ solo bằng việc phát hành EP đầu tay I Just Wanna Dance. Ngày 9/10/2017, S.M. Entertaiment ra thông báo Tiffany không tiếp tục tái ký hợp đồng với công ty nhưng vẫn sẽ tiếp tục là thành viên của Girls' Generation. Sau khi rời công ty, cô quyết định về quê nhà Mỹ để tiếp tục học tập về âm nhạc. Tháng 06/2018, Tiffany thông báo sẽ ra mắt tại Mỹ dưới trướng công ty under Paradigm Talent Agency. Cô liên tục phát hành sản phẩm âm nhạc và tổ chức thành công tour lưu diễn Bắc Mỹ mang tên Magnectic Moon tại 18 điểm đến. Ngày 16/2/2021, Tiffany được chọn cho vai diễn Roxie Hart trong vở nhạc kịch Broadway nổi tiếng \"Chicago\" tại Hàn Quốc.",
+  "main_image": "../image/Tiffany_3.jpg",
+  "image_list": "../image/Tiffany_2.jpg",
+  "sub_image": [
+    "../image/Tiffany_1.jpg",
+    "../image/Tiffany_3.jpg",
+    "../image/Tiffany_4.jpg",
+    "../image/Tiffany_5.jpg",
+    "../image/Tiffany_6.jpg",
+    "../image/Tiffany_2.jpg"
+  ],
+  "products": [
+    {
+      "al_name": "I Just Wanna Dance",
+      "link": "https://youtu.be/E0Y3ABqK7M4"
+    },
+    {
+      "al_name": "Heartbreak Hotel",
+      "link": "https://youtu.be/zQ6u3FO-aRM"
+    },
+    {
+      "al_name": "Magnetic Moon",
+      "link": "https://youtu.be/oM_t7Y8gBwU"
+    },
+    {
+      "al_name": "Lips On Lips",
+      "link": "https://youtu.be/Th7IXezLbYU"
+    }
+  ],
+  "contacts": []
+}]

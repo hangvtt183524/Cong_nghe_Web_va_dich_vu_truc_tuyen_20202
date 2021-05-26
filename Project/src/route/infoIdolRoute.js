@@ -11,6 +11,13 @@ var Infos = {};
 
 router.get('/info/:id', async(req, res, next) => {
     var idIDol = req.params.id;
+
+    if (Array.isArray(idIDol)) res.send("Something is wrong");
+    if (idIDol != undefined) {
+        idIDol.replace(/^"(.+(?="$))"$/, '$1');
+        idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
+    
     //console.log(idIDol);
         try {
             Infos = {};
@@ -51,6 +58,26 @@ router.post('/info', async(req, res) => {
     var idIDol = req.params.id;
     var src = req.body.src;
     var email = req.session.email;
+
+    if (Array.isArray(idIDol)) res.send("Something is wrong");
+    if (idIDol != undefined) {
+        idIDol.replace(/^"(.+(?="$))"$/, '$1');
+        idIDol.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
+    
+
+    if (Array.isArray(src)) res.send("Something is wrong");
+    if (src != undefined) {
+        src.replace(/^"(.+(?="$))"$/, '$1');
+        src.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
+    
+
+    if (Array.isArray(email)) res.send("Something is wrong");
+    if (email != undefined) {
+        email.replace(/^"(.+(?="$))"$/, '$1');
+        email.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
         try {
             Infos = {};
             MongoClient.connect('mongodb://localhost:27017/', (err, db) => {

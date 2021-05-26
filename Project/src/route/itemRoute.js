@@ -13,6 +13,19 @@ router.get('/items', async(req, res, next) => {
     var item = req.query.item;
     Items = [];
 
+    if (Array.isArray(categorical)) res.send("Something is wrong");
+    if (categorical != undefined) {
+        categorical.replace(/^"(.+(?="$))"$/, '$1');
+        categorical.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
+    
+    if (Array.isArray(item)) res.send("Something is wrong");
+    if (item != undefined) {
+        item.replace(/^"(.+(?="$))"$/, '$1');
+        item.replace(/^["'](.+(?=["']$))["']$/, '$1');
+    }
+    
+
     if (categorical != undefined) {
         try {
             MongoClient.connect('mongodb://localhost:27017/', (err, db) => {

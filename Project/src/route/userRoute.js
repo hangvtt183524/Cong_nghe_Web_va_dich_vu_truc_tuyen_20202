@@ -8,6 +8,9 @@ const nodemailer =  require('nodemailer');
 router.post('/login_file', async(req, res, next) => {
     try {
         var email = req.body.email;
+        if (Array.isArray(email)) res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Something is wrong!'});
+        email.replace(/^"(.+(?="$))"$/, '$1');
+        email.replace(/^["'](.+(?=["']$))["']$/, '$1');
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
             var dbo = db.db("duidol");
@@ -55,7 +58,9 @@ router.post('/login_file', async(req, res, next) => {
 router.post('/register', async(req, res) => {
     try {
         var email = req.body.email;
-
+        if (Array.isArray(email)) res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Something is wrong!'});
+        email.replace(/^"(.+(?="$))"$/, '$1');
+        email.replace(/^["'](.+(?=["']$))["']$/, '$1');
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
             var dbo = db.db("duidol");
@@ -109,7 +114,9 @@ router.get('/forget_password', (req, res) => {
 router.post('/forget_password', async(req, res) => {
     try {
         var email = req.body.email;
-
+        if (Array.isArray(email)) res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Something is wrong!'});
+        email.replace(/^"(.+(?="$))"$/, '$1');
+        email.replace(/^["'](.+(?=["']$))["']$/, '$1');
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
             var dbo = db.db("duidol");
@@ -157,6 +164,9 @@ router.post('/forget_password', async(req, res) => {
 router.get('/reset-password/:id/', (req, res, next) => {
     try {
         const id = req.params.id;
+        if (Array.isArray(id)) res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Something is wrong!'});
+        id.replace(/^"(.+(?="$))"$/, '$1');
+        id.replace(/^["'](.+(?=["']$))["']$/, '$1');
         console.log(id);
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
@@ -184,6 +194,9 @@ router.get('/reset-password/:id/', (req, res, next) => {
 router.post('/reset-pass/:id', (req, res, next) => {
     try {
         const id = req.params.id;
+        if (Array.isArray(id)) res.render(path.join(__dirname, '../../View/html', 'login.ejs'), {message:'Something is wrong!'});
+        id.replace(/^"(.+(?="$))"$/, '$1');
+        id.replace(/^["'](.+(?=["']$))["']$/, '$1');
         MongoClient.connect('mongodb://localhost:27017/', (err, db) => {
             if (err) throw err;
             var dbo = db.db("duidol");
